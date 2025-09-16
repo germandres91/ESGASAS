@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESGA SAS - Generar PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #1e3a8a;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .steps {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #3b82f6;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #1e3a8a;
+        }
+        .feature h3 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .button, .instructions, .warning {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="logo">
+            <h1>ESGA SAS - Generador de PDF</h1>
+            <p>Estudios de Suelos, Geología y Ambiental</p>
+        </div>
+
+        <div class="instructions">
+            <h2>📋 Instrucciones para Generar PDF</h2>
+            <ol class="steps">
+                <li><strong>Abre la página principal:</strong> Haz clic en el botón "Abrir Página Principal" de abajo</li>
+                <li><strong>Espera a que cargue completamente:</strong> Asegúrate de que todas las imágenes y contenido estén cargados</li>
+                <li><strong>Abre el menú de impresión:</strong> Presiona <kbd>Ctrl + P</kbd> (Windows) o <kbd>Cmd + P</kbd> (Mac)</li>
+                <li><strong>Selecciona "Guardar como PDF":</strong> En el destino de impresión, elige "Guardar como PDF"</li>
+                <li><strong>Configura las opciones:</strong>
+                    <ul>
+                        <li>Formato: A4</li>
+                        <li>Márgenes: Mínimos o Personalizados</li>
+                        <li>Incluir fondos: ✓ Marcado</li>
+                    </ul>
+                </li>
+                <li><strong>Guarda el archivo:</strong> Dale un nombre como "ESGA_SAS_Webpage.pdf"</li>
+            </ol>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Importante:</strong> Para obtener la mejor calidad, asegúrate de que todas las imágenes estén cargadas antes de generar el PDF. Si algunas imágenes no se ven, recarga la página.
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="index.html" target="_blank" class="button">🌐 Abrir Página Principal</a>
+            <button onclick="window.print()" class="button">🖨️ Imprimir/Guardar PDF</button>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📄 Formato Profesional</h3>
+                <p>El PDF incluirá todos los elementos de la página web con formato profesional, incluyendo colores, imágenes y diseño responsivo.</p>
+            </div>
+            <div class="feature">
+                <h3>🖼️ Imágenes de Alta Calidad</h3>
+                <p>Todas las imágenes de equipos, trabajos en campo y simulaciones se incluirán en alta resolución.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Contenido Completo</h3>
+                <p>Incluye todas las secciones: servicios, simulaciones interactivas, galería de imágenes y información de contacto.</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Diseño Responsivo</h3>
+                <p>El PDF mantendrá el diseño responsivo y la estructura visual de la página web original.</p>
+            </div>
+        </div>
+
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin-top: 30px;">
+            <h3>✅ Ventajas de este método:</h3>
+            <ul>
+                <li>No requiere instalación de software adicional</li>
+                <li>Funciona en cualquier navegador moderno</li>
+                <li>Mantiene la calidad visual original</li>
+                <li>Proceso rápido y sencillo</li>
+                <li>Control total sobre la configuración del PDF</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p><strong>ESGA SAS</strong> - Especialistas en Estudios Geofísicos y Ambientales</p>
+            <p>📞 +57 3124591696 | 📧 empresaesga@hotmail.com</p>
+            <p>📍 carrera 20 #24-174 sogamoso boyaca, edificio bello</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto-scroll to top when printing
+        window.addEventListener('beforeprint', function() {
+            window.scrollTo(0, 0);
+        });
+
+        // Show print dialog when button is clicked
+        document.querySelector('button').addEventListener('click', function() {
+            setTimeout(() => {
+                window.print();
+            }, 100);
+        });
+
+        // Add keyboard shortcut
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>

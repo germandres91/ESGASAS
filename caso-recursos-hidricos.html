@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Hídricos - Caso Completo | ESGA SAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'esga-blue': '#1e3a8a',
+                        'esga-light-blue': '#3b82f6',
+                        'esga-orange': '#f97316',
+                        'esga-gray': '#6b7280'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="h-12 w-auto object-contain">
+                    <div>
+                        <h1 class="text-xl font-bold text-esga-blue">ESGA SAS</h1>
+                        <p class="text-sm text-esga-gray">Estudios de Suelos Geología y Ambiental</p>
+                    </div>
+                </div>
+                <button onclick="window.close()" class="bg-esga-orange text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 text-white mb-8">
+            <h1 class="text-4xl font-bold mb-4">Recursos Hídricos</h1>
+            <p class="text-xl">Localización de acuíferos y análisis del flujo de agua subterránea</p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Descripción del Proyecto</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Objetivo</h3>
+                        <p class="text-esga-gray">Caracterización hidrogeológica del acuífero para optimizar la gestión de recursos hídricos y evaluar la disponibilidad de agua subterránea.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Ubicación</h3>
+                        <p class="text-esga-gray">Municipio de Sogamoso, Boyacá, Colombia</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Duración</h3>
+                        <p class="text-esga-gray">4 meses de estudio integral</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Equipo Utilizado</h3>
+                        <ul class="text-esga-gray space-y-1">
+                            <li>• Sistema de tomografía eléctrica avanzado</li>
+                            <li>• Sondas de conductividad eléctrica</li>
+                            <li>• Equipos de medición de nivel freático</li>
+                            <li>• Software de modelado hidrogeológico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Metodología</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">1</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Reconocimiento Hidrogeológico</h3>
+                            <p class="text-esga-gray text-sm">Identificación de unidades acuíferas y piezómetros</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">2</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Perfiles de Tomografía</h3>
+                            <p class="text-esga-gray text-sm">Mapeo de la estructura del acuífero</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">3</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Mediciones de Campo</h3>
+                            <p class="text-esga-gray text-sm">Niveles piezométricos y parámetros hidráulicos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">4</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Modelado Numérico</h3>
+                            <p class="text-esga-gray text-sm">Simulación del flujo subterráneo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-esga-blue mb-6">Resultados Obtenidos</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">12</div>
+                    <p class="text-esga-gray">Perfiles de Tomografía</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">150</div>
+                    <p class="text-esga-gray">m³/día Capacidad</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">90%</div>
+                    <p class="text-esga-gray">Precisión del Modelo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Details -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Características del Acuífero</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Propiedades Hidráulicas</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• Conductividad hidráulica: 10⁻⁴ - 10⁻³ m/s</li>
+                            <li>• Porosidad efectiva: 15-25%</li>
+                            <li>• Transmisividad: 50-200 m²/día</li>
+                            <li>• Coeficiente de almacenamiento: 0.01-0.1</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Geometría del Acuífero</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• Profundidad: 20-80 metros</li>
+                            <li>• Espesor promedio: 30 metros</li>
+                            <li>• Extensión: 15 km²</li>
+                            <li>• Tipo: Acuífero libre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Análisis de Calidad</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Parámetros Físico-Químicos</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• pH: 6.5 - 7.5</li>
+                            <li>• Conductividad: 200-500 μS/cm</li>
+                            <li>• Dureza total: 150-300 mg/L CaCO₃</li>
+                            <li>• Turbidez: < 5 NTU</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Criterios de Potabilidad</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• Cumple estándares de la OMS</li>
+                            <li>• Apto para consumo humano</li>
+                            <li>• Requiere tratamiento mínimo</li>
+                            <li>• Bajo riesgo de contaminación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flow Analysis -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-esga-blue mb-6">Análisis del Flujo Subterráneo</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 border border-blue-200 rounded-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-esga-blue mb-2">Dirección del Flujo</h3>
+                    <p class="text-esga-gray text-sm">Noreste-Suroeste con gradiente hidráulico de 0.02</p>
+                </div>
+                <div class="text-center p-6 border border-blue-200 rounded-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-esga-blue mb-2">Velocidad de Flujo</h3>
+                    <p class="text-esga-gray text-sm">0.5-2.0 m/día dependiendo de la zona</p>
+                </div>
+                <div class="text-center p-6 border border-blue-200 rounded-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-esga-blue mb-2">Recarga Natural</h3>
+                    <p class="text-esga-gray text-sm">800,000 m³/año principalmente por lluvia</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-6">Recomendaciones</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-3">Gestión del Recurso</h3>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>• Implementar red de monitoreo piezométrico</li>
+                        <li>• Establecer zonas de protección del acuífero</li>
+                        <li>• Controlar extracciones para evitar sobreexplotación</li>
+                        <li>• Monitoreo continuo de calidad del agua</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">Beneficios del Estudio</h3>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>• Optimización del uso del recurso hídrico</li>
+                        <li>• Reducción de costos de perforación</li>
+                        <li>• Planificación sostenible del desarrollo</li>
+                        <li>• Cumplimiento de normativas ambientales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-esga-blue text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-blue-200">© 2024 ESGA SAS - Estudios de Suelos Geología y Ambiental</p>
+            <p class="text-blue-200 text-sm mt-2">carrera 20 #24-174 sogamoso boyaca, edificio bello</p>
+        </div>
+    </footer>
+</body>
+</html>
