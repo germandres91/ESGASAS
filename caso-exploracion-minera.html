@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploración Minera - Caso Completo | ESGA SAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'esga-blue': '#1e3a8a',
+                        'esga-light-blue': '#3b82f6',
+                        'esga-orange': '#f97316',
+                        'esga-gray': '#6b7280'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="h-12 w-auto object-contain">
+                    <div>
+                        <h1 class="text-xl font-bold text-esga-blue">ESGA SAS</h1>
+                        <p class="text-sm text-esga-gray">Estudios de Suelos Geología y Ambiental</p>
+                    </div>
+                </div>
+                <button onclick="window.close()" class="bg-esga-orange text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl p-8 text-white mb-8">
+            <h1 class="text-4xl font-bold mb-4">Exploración Minera</h1>
+            <p class="text-xl">Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad</p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Descripción del Proyecto</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Objetivo</h3>
+                        <p class="text-esga-gray">Identificación y caracterización de estructuras geológicas favorables para la mineralización mediante técnicas geofísicas avanzadas.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Ubicación</h3>
+                        <p class="text-esga-gray">Zona minera de Boyacá, Colombia</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Duración</h3>
+                        <p class="text-esga-gray">3 meses de trabajo de campo y análisis</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue mb-2">Equipo Utilizado</h3>
+                        <ul class="text-esga-gray space-y-1">
+                            <li>• Sistema de tomografía eléctrica 2D/3D</li>
+                            <li>• Electrodos de acero inoxidable</li>
+                            <li>• Cables de conexión especializados</li>
+                            <li>• Baterías de alta capacidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Metodología</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-esga-orange rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">1</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Reconocimiento Geológico</h3>
+                            <p class="text-esga-gray text-sm">Mapeo de estructuras y muestreo de afloramientos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-esga-orange rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">2</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Diseño de Perfiles</h3>
+                            <p class="text-esga-gray text-sm">Configuración de líneas de tomografía eléctrica</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-esga-orange rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">3</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Adquisición de Datos</h3>
+                            <p class="text-esga-gray text-sm">Mediciones de resistividad en campo</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-esga-orange rounded-full flex items-center justify-center text-white font-bold mr-4 mt-1">4</div>
+                        <div>
+                            <h3 class="font-semibold text-esga-blue">Procesamiento e Interpretación</h3>
+                            <p class="text-esga-gray text-sm">Análisis de datos y modelado geológico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-esga-blue mb-6">Resultados Obtenidos</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-lg">
+                    <div class="text-3xl font-bold text-esga-orange mb-2">15</div>
+                    <p class="text-esga-gray">Perfiles de Tomografía</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-lg">
+                    <div class="text-3xl font-bold text-esga-orange mb-2">3</div>
+                    <p class="text-esga-gray">Zonas Anómalas Identificadas</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-lg">
+                    <div class="text-3xl font-bold text-esga-orange mb-2">85%</div>
+                    <p class="text-esga-gray">Precisión en la Detección</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Details -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Especificaciones Técnicas</h2>
+                <div class="space-y-4">
+                                         <div>
+                         <h3 class="font-semibold text-esga-blue">Configuración de Equipos</h3>
+                         <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                             <li>• Electrodos: 120 unidades</li>
+                             <li>• Espaciado: 5 metros</li>
+                             <li>• Profundidad máxima: 200 metros</li>
+                             <li>• Resolución: 1 metro</li>
+                         </ul>
+                     </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Parámetros de Medición</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• Voltaje: 400V máximo</li>
+                            <li>• Corriente: 1A máximo</li>
+                            <li>• Frecuencia: 0.1 Hz</li>
+                            <li>• Tiempo de integración: 30 segundos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-esga-blue mb-6">Análisis de Datos</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Software Utilizado</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• RES2DINV para inversión 2D</li>
+                            <li>• RES3DINV para inversión 3D</li>
+                            <li>• Surfer para visualización</li>
+                            <li>• AutoCAD para planos finales</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-esga-blue">Criterios de Interpretación</h3>
+                        <ul class="text-esga-gray text-sm space-y-1 mt-2">
+                            <li>• Anomalías de baja resistividad</li>
+                            <li>• Estructuras lineales</li>
+                            <li>• Contactos geológicos</li>
+                            <li>• Zonas de fracturación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="bg-gradient-to-r from-esga-blue to-esga-light-blue rounded-xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-6">Recomendaciones</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-3">Próximos Pasos</h3>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>• Perforación de confirmación en zonas anómalas</li>
+                        <li>• Análisis geoquímico de muestras</li>
+                        <li>• Evaluación económica preliminar</li>
+                        <li>• Plan de exploración detallada</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">Beneficios Obtenidos</h3>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>• Reducción del riesgo exploratorio</li>
+                        <li>• Optimización de recursos</li>
+                        <li>• Información geológica detallada</li>
+                        <li>• Base para decisiones de inversión</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-esga-blue text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-blue-200">© 2024 ESGA SAS - Estudios de Suelos Geología y Ambiental</p>
+            <p class="text-blue-200 text-sm mt-2">carrera 20 #24-174 sogamoso boyaca, edificio bello</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "esga-sas-pdf-generator",
+  "version": "1.0.0",
+  "description": "Generador de PDF para la página web de ESGA SAS",
+  "main": "generate-pdf.js",
+  "scripts": {
+    "generate-pdf": "node generate-pdf.js",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "pdf",
+    "puppeteer",
+    "esga",
+    "geofisica",
+    "tomografia"
+  ],
+  "author": "ESGA SAS",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.5.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+

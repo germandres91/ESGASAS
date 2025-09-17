@@ -1,0 +1,3236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESGA SAS - Expertos en Estudios Geofísicos y Ambientales | Tomografías Eléctricas Colombia</title>
+    <meta name="description" content="ESGA SAS - Líderes en estudios geofísicos, tomografías eléctricas y servicios ambientales en Colombia. Más de 10 años de experiencia en exploración minera, recursos hídricos e ingeniería civil.">
+    <meta name="keywords" content="tomografía eléctrica, estudios geofísicos, geología, suelos, ambiental, ESGA SAS, Colombia, exploración minera, recursos hídricos, ingeniería civil, resistividad eléctrica">
+    <meta name="author" content="ESGA SAS">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://esgasas.com/">
+    <meta property="og:title" content="ESGA SAS - Expertos en Estudios Geofísicos y Ambientales">
+    <meta property="og:description" content="Especialistas en tomografías eléctricas, estudios geofísicos y servicios ambientales en Colombia. Más de 10 años de experiencia.">
+    <meta property="og:image" content="images/LOGO ESGA1.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://esgasas.com/">
+    <meta property="twitter:title" content="ESGA SAS - Expertos en Estudios Geofísicos">
+    <meta property="twitter:description" content="Especialistas en tomografías eléctricas y estudios ambientales en Colombia.">
+    <meta property="twitter:image" content="images/LOGO ESGA1.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://esgasas.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/LOGO ESGA1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/LOGO ESGA1.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/LOGO ESGA1.png" as="image">
+    <link rel="preload" href="images/4.jpeg" as="image">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ESGA SAS",
+        "url": "https://esgasas.com",
+        "logo": "images/LOGO ESGA1.png",
+        "description": "Especialistas en estudios geofísicos, tomografías eléctricas y servicios ambientales en Colombia",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "carrera 20 #24-174",
+            "addressLocality": "Sogamoso",
+            "addressRegion": "Boyacá",
+            "addressCountry": "CO"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+57-3124591696",
+            "contactType": "customer service",
+            "email": "empresaesga@hotmail.com"
+        },
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=100064087063265&locale=es_LA",
+            "https://www.instagram.com/esga_sas/"
+        ]
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'esga-blue': '#1e3a8a',
+                        'esga-light-blue': '#3b82f6',
+                        'esga-gray': '#64748b',
+                        'esga-orange': '#f97316'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.css">
+    
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .glass-effect { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .hero-bg { 
+            background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(59, 130, 246, 0.8)), 
+                        url('images/4.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: background-image 1s ease-in-out;
+        }
+        
+        .hero-bg.image-2 {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.7), rgba(59, 130, 246, 0.8)), 
+                              url('images/3d.jpg');
+        }
+        
+        .hero-bg.image-3 {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.7), rgba(59, 130, 246, 0.8)), 
+                              url('images/6.jpeg');
+        }
+        
+        /* Smooth transitions for background images */
+        .hero-bg {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        /* Optimize background images for different screen sizes */
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-attachment: scroll;
+                background-size: cover;
+            }
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Mobile Menu Animations */
+        .animate-in {
+            animation: slideDown 0.3s ease-out forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Smooth transitions for mobile menu */
+        #mobile-menu {
+            transform-origin: top;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Mobile menu button hover effects */
+        #mobile-menu-btn:hover {
+            transform: scale(1.05);
+        }
+
+        #mobile-menu-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Back to Top Button Styles */
+        #back-to-top {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(30, 58, 138, 0.3);
+        }
+
+        #back-to-top:active {
+            transform: translateY(-1px);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .equipment-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        .tomography-canvas { border: 2px solid #1e3a8a; border-radius: 8px; }
+        .resistivity-scale { background: linear-gradient(to right, #1e40af, #3b82f6, #10b981, #f59e0b, #ef4444); }
+        
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        /* Logo styles */
+        .logo-header {
+            transition: all 0.3s ease;
+        }
+        
+        .logo-header:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-hero {
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+        }
+        
+        .logo-hero:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-bg { background-size: cover; }
+            .tomography-canvas { 
+                max-width: 100%; 
+                height: auto; 
+                width: 100% !important;
+                max-width: 300px !important;
+            }
+            .logo-hero { height: 5rem; }
+            
+            /* Simulaciones responsive */
+            #simulaciones .grid {
+                gap: 1rem;
+            }
+            
+            #simulaciones .tomography-canvas {
+                max-width: 280px !important;
+                height: 280px !important;
+            }
+            
+            #simulaciones h3 {
+                font-size: 1.5rem;
+            }
+            
+            #simulaciones h4 {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tomography-canvas {
+                max-width: 250px !important;
+                height: 250px !important;
+            }
+            
+            #simulaciones .tomography-canvas {
+                max-width: 250px !important;
+                height: 250px !important;
+            }
+            
+            #simulaciones .grid {
+                gap: 0.75rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-hero { height: 4rem; }
+        }
+
+
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Header/Navegación -->
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center">
+                        <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="h-12 w-auto object-contain logo-header">
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="text-xl font-bold text-esga-blue">ESGA SAS</h1>
+                        <p class="text-xs text-esga-gray">Estudios de Suelos, Geología y Ambiental</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-esga-gray hover:text-esga-blue transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-esga-gray hover:text-esga-blue transition-colors">Servicios</a>
+                    <a href="#simulaciones" class="text-esga-gray hover:text-esga-blue transition-colors">Simulaciones</a>
+                    <a href="#contacto" class="bg-esga-orange text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">Contactar</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-esga-blue p-2 rounded-lg hover:bg-esga-blue/10 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="menu-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="close-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 transform transition-all duration-300 ease-in-out">
+                <div class="bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-200 p-6">
+                    <div class="flex flex-col space-y-4">
+                        <a href="#inicio" class="text-esga-gray hover:text-esga-blue transition-colors py-3 px-4 rounded-lg hover:bg-esga-blue/5 font-medium">🏠 Inicio</a>
+                        <a href="#servicios" class="text-esga-gray hover:text-esga-blue transition-colors py-3 px-4 rounded-lg hover:bg-esga-blue/5 font-medium">🔧 Servicios</a>
+                        <a href="#simulaciones" class="text-esga-gray hover:text-esga-blue transition-colors py-3 px-4 rounded-lg hover:bg-esga-blue/5 font-medium">📊 Simulaciones</a>
+                        <div class="pt-2">
+                            <a href="#contacto" class="bg-esga-orange text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors text-center font-semibold block">💬 Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+        <div class="equipment-overlay"></div>
+        
+        <div class="container mx-auto px-4 text-center hero-content">
+            <div class="max-w-4xl mx-auto">
+                <!-- Logo Principal -->
+                <div class="flex justify-center mb-8">
+                    <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="h-20 md:h-28 w-auto object-contain logo-hero">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    ESGA SAS
+                    <span class="block text-3xl md:text-4xl font-medium mt-2">Expertos en Estudios Geofísicos y Ambientales</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Tecnología de punta para el análisis del subsuelo
+                </p>
+                <p class="text-lg mb-12 text-blue-200 max-w-3xl mx-auto">
+                    Especialistas en tomografías eléctricas, estudios de suelos y servicios ambientales. 
+                    Más de 10 años de experiencia en Colombia y Latinoamérica.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#servicios" class="bg-esga-orange text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors">
+                        Ver Servicios
+                    </a>
+                    <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-esga-blue transition-colors">
+                        Solicitar Cotización
+                    </a>
+                </div>
+                
+                <!-- Image Carousel Indicators -->
+                <div class="flex justify-center space-x-3 mt-8">
+                    <div class="w-3 h-3 bg-white rounded-full opacity-100 transition-opacity duration-500" id="indicator-1"></div>
+                    <div class="w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-500" id="indicator-2"></div>
+                    <div class="w-3 h-3 bg-white rounded-full opacity-50 transition-opacity duration-500" id="indicator-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Visual Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <!-- Equipment Icons representing field work -->
+            <div class="absolute top-20 left-10 w-16 h-16 bg-white/15 rounded-lg flex items-center justify-center animate-pulse">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+            </div>
+            
+            <div class="absolute top-40 right-20 w-12 h-12 bg-white/15 rounded-lg flex items-center justify-center animate-pulse delay-1000">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+            </div>
+            
+            <div class="absolute bottom-40 left-20 w-14 h-14 bg-white/15 rounded-lg flex items-center justify-center animate-pulse delay-2000">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+            </div>
+            
+            <!-- Cable/Equipment Lines -->
+            <div class="absolute top-1/4 left-1/4 w-32 h-1 bg-white/20 transform rotate-45 animate-pulse delay-500"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-24 h-1 bg-white/20 transform -rotate-12 animate-pulse delay-1500"></div>
+            
+            <!-- Battery/Equipment Representations -->
+            <div class="absolute top-1/3 right-1/3 w-8 h-12 bg-white/10 rounded-lg animate-pulse delay-300"></div>
+            <div class="absolute bottom-1/4 right-1/6 w-10 h-8 bg-white/10 rounded-lg animate-pulse delay-1200"></div>
+            
+            <!-- Field Work Elements -->
+            <div class="absolute top-1/2 left-1/6 w-6 h-6 bg-white/15 rounded-full animate-pulse delay-800"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-4 h-4 bg-white/15 rounded-full animate-pulse delay-1600"></div>
+        </div>
+        
+        <!-- Professional Equipment Grid Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0); background-size: 50px 50px;"></div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-esga-blue mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-esga-gray max-w-3xl mx-auto">
+                    Tecnología geofísica de vanguardia para el análisis integral del subsuelo
+                </p>
+            </div>
+            
+            <!-- Servicios Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Tomografía Eléctrica -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-esga-blue to-esga-light-blue rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Tomografías Eléctricas (ERT)</h3>
+                    <p class="text-esga-gray mb-4">
+                        Mapeo detallado del subsuelo mediante resistividad eléctrica. Detección de acuíferos, cavidades y estructuras geológicas.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Exploración minera y recursos hídricos</li>
+                        <li>• Estudios de ingeniería civil</li>
+                        <li>• Investigación arqueológica</li>
+                        <li>• Estudios ambientales</li>
+                    </ul>
+                </div>
+
+                <!-- Sísmica de Refracción -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-esga-orange to-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Sísmica de Refracción</h3>
+                    <p class="text-esga-gray mb-4">
+                        Análisis de ondas sísmicas para determinar la velocidad de propagación y estructura del subsuelo.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Caracterización de suelos</li>
+                        <li>• Estudios de estabilidad</li>
+                        <li>• Investigación de fallas geológicas</li>
+                        <li>• Evaluación de cimentaciones</li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Estudios Geoeléctricos -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Estudios Geoeléctricos</h3>
+                    <p class="text-esga-gray mb-4">
+                        Análisis de la resistividad del suelo para caracterización geológica y estudios ambientales.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Caracterización de suelos</li>
+                        <li>• Estudios de contaminación</li>
+                        <li>• Evaluación de acuíferos</li>
+                        <li>• Investigación geotécnica</li>
+                    </ul>
+                </div>
+
+                <!-- Exploración Minera -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Exploración Minera</h3>
+                    <p class="text-esga-gray mb-4">
+                        Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad eléctrica.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Detección de mineralización</li>
+                        <li>• Mapeo de estructuras geológicas</li>
+                        <li>• Evaluación de recursos minerales</li>
+                        <li>• Estudios de prospección</li>
+                    </ul>
+                </div>
+
+                <!-- Estudios de Suelos -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Estudios de Suelos</h3>
+                    <p class="text-esga-gray mb-4">
+                        Caracterización geotécnica integral del suelo para proyectos de construcción e ingeniería civil.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Análisis de capacidad portante</li>
+                        <li>• Clasificación geotécnica de suelos</li>
+                        <li>• Evaluación de estabilidad de taludes</li>
+                        <li>• Diseño de cimentaciones</li>
+                    </ul>
+                </div>
+
+                <!-- Estudios de Gestión del Riesgo -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-esga-blue mb-4">Gestión del Riesgo</h3>
+                    <p class="text-esga-gray mb-4">
+                        Evaluación integral de riesgos geológicos y ambientales para el desarrollo urbano sostenible.
+                    </p>
+                    <ul class="text-sm text-esga-gray space-y-2">
+                        <li>• Análisis de amenazas naturales</li>
+                        <li>• Evaluación de vulnerabilidad urbana</li>
+                        <li>• Planificación territorial segura</li>
+                        <li>• Mitigación de riesgos geológicos</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Galería de Equipos -->
+
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                
+
+                
+
+                
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulaciones Interactivas Section -->
+    <section id="simulaciones" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-esga-blue mb-4">Simulaciones Interactivas</h2>
+                <p class="text-xl text-esga-gray max-w-3xl mx-auto">
+                    Explore diferentes aplicaciones de las tomografías eléctricas con nuestros simuladores interactivos
+                </p>
+            </div>
+
+            <!-- Controles de Simulación -->
+            <div class="bg-gray-50 rounded-xl p-4 md:p-8 mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <button class="simulation-btn active bg-esga-blue text-white px-6 py-3 rounded-lg font-semibold" data-case="mining">
+                        Exploración Minera
+                    </button>
+                    <button class="simulation-btn bg-white text-esga-blue px-6 py-3 rounded-lg font-semibold border-2 border-esga-blue" data-case="water">
+                        Recursos Hídricos
+                    </button>
+                    <button class="simulation-btn bg-white text-esga-blue px-6 py-3 rounded-lg font-semibold border-2 border-esga-blue" data-case="civil">
+                        Ingeniería Civil
+                    </button>
+                    <button class="simulation-btn bg-white text-esga-blue px-6 py-3 rounded-lg font-semibold border-2 border-esga-blue" data-case="environmental">
+                        Estudios Ambientales
+                    </button>
+                </div>
+
+                <!-- Controles de Profundidad -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                        <label class="text-esga-blue font-semibold text-sm sm:text-base">Profundidad:</label>
+                        <div class="flex items-center space-x-2">
+                            <input type="range" id="depth-slider" min="0" max="50" value="35" class="w-24 sm:w-32 md:w-48">
+                            <span id="depth-value" class="text-esga-blue font-semibold text-sm sm:text-base">35m</span>
+                        </div>
+                    </div>
+                    <button id="export-btn" class="bg-esga-orange text-white px-3 py-2 rounded-lg hover:bg-orange-600 transition-colors text-sm sm:text-base w-full sm:w-auto">
+                        Exportar Resultados
+                    </button>
+                </div>
+            </div>
+
+            <!-- Canvas de Simulación - Panel Gemelo -->
+            <div class="bg-white border-2 border-esga-blue rounded-xl p-4 md:p-6 mb-8">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                    <h3 id="simulation-title" class="text-xl md:text-2xl font-bold text-esga-blue">Exploración Minera - Panel Gemelo</h3>
+                    <div class="text-xs sm:text-sm text-esga-gray">
+                        <span id="resistivity-range">Rango: 2-2000 Ω⋅m</span>
+                    </div>
+                </div>
+                
+                <!-- Twin Panel Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <!-- Panel 1: Simulación Original -->
+                    <div class="relative">
+                        <h4 class="text-base md:text-lg font-semibold text-esga-blue mb-2 text-center">Simulación Original</h4>
+                        <canvas id="tomography-canvas" width="400" height="400" class="w-full max-w-lg mx-auto tomography-canvas border border-gray-300 rounded-lg"></canvas>
+                        
+                        <!-- Overlay de Interpretación -->
+                        <div id="interpretation-overlay" class="absolute top-0 left-0 w-full h-full pointer-events-none">
+                            <!-- Anomalías y estructuras se dibujarán aquí -->
+                        </div>
+                    </div>
+                    
+                    <!-- Panel 2: Interpretación -->
+                    <div class="relative">
+                        <h4 class="text-base md:text-lg font-semibold text-esga-blue mb-2 text-center">Interpretación</h4>
+                        <canvas id="interpretation-canvas" width="400" height="400" class="w-full max-w-lg mx-auto tomography-canvas border border-gray-300 rounded-lg"></canvas>
+                        
+                        <!-- Overlay de Interpretación -->
+                        <div id="interpretation-overlay-2" class="absolute top-0 left-0 w-full h-full pointer-events-none">
+                            <!-- Anomalías y estructuras se dibujarán aquí -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Escala de Colores -->
+                <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                        <span class="text-xs sm:text-sm text-esga-gray">Baja Resistividad</span>
+                        <div class="resistivity-scale w-32 sm:w-48 h-4 sm:h-6 rounded"></div>
+                        <span class="text-xs sm:text-sm text-esga-gray">Alta Resistividad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de Interpretación -->
+            <div id="interpretation-info" class="bg-gray-50 rounded-xl p-4 md:p-6">
+                <h4 class="text-lg md:text-xl font-bold text-esga-blue mb-4">Interpretación Geológica</h4>
+                <div id="interpretation-content" class="text-esga-gray">
+                    <p class="mb-4">
+                        <strong>Interpretación:</strong> El subsuelo presenta una secuencia compleja dominada por rellenos antrópicos y depósitos naturales, con presencia de materiales de alta retención hídrica y sectores saturados, lo que indica condiciones variables de permeabilidad y consolidación.
+                    </p>
+                    <p>
+                        <strong>Recomendaciones:</strong> Realizar estudios complementarios de perforación y muestreo para confirmar la composición y propiedades geotécnicas de las capas identificadas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Casos de Estudio Reales -->
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-esga-blue mb-4">Proyectos Reales Ejecutados</h3>
+                <p class="text-lg text-esga-gray max-w-4xl mx-auto">
+                    Conoce algunos de nuestros casos de éxito más destacados. Cada proyecto representa años de experiencia 
+                    y cientos de estudios geofísicos realizados en Colombia y Latinoamérica.
+                </p>
+                <div class="flex items-center justify-center mt-4 space-x-2">
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <span class="text-sm text-esga-gray font-medium">+200 proyectos exitosos</span>
+                    <div class="w-3 h-3 bg-blue-500 rounded-full ml-4"></div>
+                    <span class="text-sm text-esga-gray font-medium">+10 años de experiencia</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-esga-blue mb-2">Exploración Minera</h4>
+                    <p class="text-esga-gray text-sm mb-4">
+                        Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad.
+                    </p>
+                    <button onclick="window.open('caso-exploracion-minera.html', '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes')" class="text-esga-orange font-semibold hover:text-orange-600 transition-colors cursor-pointer">
+                        Ver Caso Completo →
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-esga-blue mb-2">Recursos Hídricos</h4>
+                    <p class="text-esga-gray text-sm mb-4">
+                        Localización de acuíferos y análisis del flujo de agua subterránea.
+                    </p>
+                    <button onclick="window.open('caso-recursos-hidricos.html', '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes')" class="text-esga-orange font-semibold hover:text-orange-600 transition-colors cursor-pointer">
+                        Ver Caso Completo →
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-gradient-to-br from-gray-500 to-gray-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-esga-blue mb-2">Ingeniería Civil</h4>
+                    <p class="text-esga-gray text-sm mb-4">
+                        Detección de cavidades, fracturas y evaluación de estabilidad del terreno.
+                    </p>
+                    <button onclick="window.open('caso-ingenieria-civil.html', '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes')" class="text-esga-orange font-semibold hover:text-orange-600 transition-colors cursor-pointer">
+                        Ver Caso Completo →
+                    </button>
+                </div>
+            </div>
+                 </div>
+     </section>
+
+
+
+     <!-- Galería de Imágenes Reales ESGA SAS -->
+     <section class="py-20 bg-gray-50">
+         <div class="container mx-auto px-4">
+             <div class="text-center mb-16">
+                 <h2 class="text-4xl font-bold text-esga-blue mb-4">Nuestro Trabajo en Imágenes</h2>
+                 <p class="text-xl text-esga-gray max-w-3xl mx-auto">
+                     Conoce nuestro equipo profesional y la tecnología que utilizamos en campo
+                 </p>
+             </div>
+
+             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <!-- Imagen 1: Equipo en campo -->
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer" onclick="openImageModal('equipo-campo')">
+                     <div class="h-64 relative overflow-hidden">
+                         <!-- Imagen de fondo con transparencia -->
+                         <div class="w-full h-full relative">
+                             <img src="images/4.jpeg" alt="Equipo ESGA SAS en Campo" class="w-full h-full object-cover" loading="lazy" srcset="images/4.jpeg 1x, images/4.jpeg 2x">
+                             <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-blue-800/80"></div>
+                             <!-- Texto superpuesto -->
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                 <div class="text-center text-white p-4">
+                                     <h4 class="font-semibold text-lg mb-2">Equipo ESGA SAS en Campo</h4>
+                                     <p class="text-sm text-blue-200">Técnicos profesionales con equipos especializados</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- Hover overlay -->
+                         <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                             <div class="text-center text-white">
+                                 <svg class="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                 </svg>
+                                 <span class="font-semibold">Ver Imagen Completa</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="p-6">
+                         <p class="text-sm text-esga-gray mb-4">
+                             Nuestro equipo de técnicos especializados trabajando con equipos de tomografía eléctrica 
+                             en condiciones de campo reales, utilizando tecnología de vanguardia.
+                         </p>
+                         <div class="flex items-center text-esga-blue text-sm">
+                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                             </svg>
+                             carrera 20 #24-174 sogamoso boyaca, edificio bello
+                         </div>
+                     </div>
+                 </div>
+
+                 <!-- Imagen 2: Equipos geofísicos -->
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer" onclick="openImageModal('equipos-geofisicos')">
+                     <div class="h-64 relative overflow-hidden">
+                         <!-- Imagen de fondo con transparencia -->
+                         <div class="w-full h-full relative">
+                             <img src="images/equipos.jpg" alt="Equipos Geofísicos ESGA SAS" class="w-full h-full object-cover" loading="lazy">
+                             <div class="absolute inset-0 bg-gradient-to-br from-orange-600/80 to-orange-700/80"></div>
+                         </div>
+                         <!-- Texto superpuesto -->
+                         <div class="absolute inset-0 flex items-center justify-center">
+                             <div class="text-center text-white p-6">
+                                 <h4 class="font-semibold text-lg mb-2">Equipos Geofísicos</h4>
+                                 <p class="text-sm text-orange-200">Instrumentos de alta precisión</p>
+                             </div>
+                         </div>
+                         <!-- Hover overlay -->
+                         <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                             <div class="text-center text-white">
+                                 <svg class="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                 </svg>
+                                 <span class="font-semibold">Ver Equipos</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="p-6">
+                         <p class="text-sm text-esga-gray mb-4">
+                             Equipos especializados incluyendo baterías, cables, electrodos y unidades de medición 
+                             para tomografías eléctricas y estudios geofísicos.
+                         </p>
+                         <div class="flex items-center text-esga-blue text-sm">
+                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                             </svg>
+                             Tecnología de vanguardia
+                         </div>
+                     </div>
+                 </div>
+
+                 <!-- Imagen 3: Pantalla de datos -->
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer" onclick="openImageModal('pantalla-datos')">
+                     <div class="h-64 relative overflow-hidden">
+                         <!-- Imagen de fondo con transparencia -->
+                         <div class="w-full h-full relative">
+                             <img src="images/1.jpeg" alt="Datos en Tiempo Real ESGA SAS" class="w-full h-full object-cover" loading="lazy">
+                             <div class="absolute inset-0 bg-gradient-to-br from-green-600/80 to-green-700/80"></div>
+                         </div>
+                         <!-- Texto superpuesto -->
+                         <div class="absolute inset-0 flex items-center justify-center">
+                             <div class="text-center text-white p-6">
+                                 <h4 class="font-semibold text-lg mb-2">Datos en Tiempo Real</h4>
+                                 <p class="text-sm text-green-200">Visualización de resistividad</p>
+                             </div>
+                         </div>
+                         <!-- Hover overlay -->
+                         <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                             <div class="text-center text-white">
+                                 <svg class="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                 </svg>
+                                 <span class="font-semibold">Ver Pantalla</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="p-6">
+                         <p class="text-sm text-esga-gray mb-4">
+                             Pantalla del equipo ESGA SAS mostrando datos de tomografía eléctrica en tiempo real, 
+                             con interpretación de resistividad del subsuelo.
+                         </p>
+                         <div class="flex items-center text-esga-blue text-sm">
+                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                             </svg>
+                             Monitoreo continuo
+                         </div>
+                     </div>
+                 </div>
+
+                 <!-- Imagen 4: Trabajo en campo -->
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer" onclick="openImageModal('trabajo-campo')">
+                     <div class="h-64 relative overflow-hidden">
+                         <!-- Imagen de fondo con transparencia -->
+                         <div class="w-full h-full relative">
+                             <img src="images/6.jpeg" alt="Trabajo en Campo ESGA SAS" class="w-full h-full object-cover" loading="lazy">
+                             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-blue-700/80"></div>
+                         </div>
+                         <!-- Texto superpuesto -->
+                         <div class="absolute inset-0 flex items-center justify-center">
+                             <div class="text-center text-white p-6">
+                                 <h4 class="font-semibold text-lg mb-2">Trabajo en Campo</h4>
+                                 <p class="text-sm text-blue-200">Mediciones profesionales</p>
+                             </div>
+                         </div>
+                         <!-- Hover overlay -->
+                         <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                             <div class="text-center text-white">
+                                 <svg class="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                 </svg>
+                                 <span class="font-semibold">Ver Trabajo</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="p-6">
+                         <p class="text-sm text-esga-gray mb-4">
+                             Técnico realizando mediciones en campo con vegetación densa, demostrando nuestra 
+                             capacidad de trabajo en condiciones desafiantes.
+                         </p>
+                         <div class="flex items-center text-esga-blue text-sm">
+                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                             </svg>
+                             Cobertura nacional
+                         </div>
+                     </div>
+                 </div>
+
+
+                                 <!-- Imagen 6: Software de análisis -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer" onclick="openImageModal('software-analisis')">
+                    <div class="h-64 relative overflow-hidden">
+                        <!-- Imagen de fondo con transparencia -->
+                        <div class="w-full h-full relative">
+                            <img src="images/3d.jpg" alt="Análisis de Datos ESGA SAS" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-br from-teal-600/80 to-teal-700/80"></div>
+                        </div>
+                        <!-- Texto superpuesto -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h4 class="font-semibold text-lg mb-2">Análisis de Datos</h4>
+                                <p class="text-sm text-teal-200">Software especializado</p>
+                            </div>
+                        </div>
+                         <!-- Hover overlay -->
+                         <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                             <div class="text-center text-white">
+                                 <svg class="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                 </svg>
+                                 <span class="font-semibold">Ver Software</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="p-6">
+                         <p class="text-sm text-esga-gray mb-4">
+                             Software CAD y herramientas de análisis para interpretación de datos geofísicos 
+                             y generación de reportes profesionales.
+                         </p>
+                         <div class="flex items-center text-esga-blue text-sm">
+                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                             </svg>
+                             Reportes detallados
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Call to Action -->
+             <div class="text-center mt-12">
+                 <h3 class="text-2xl font-bold text-esga-blue mb-4">¿Listo para trabajar con nosotros?</h3>
+                 <p class="text-lg text-esga-gray mb-8">
+                     Contáctanos para conocer más sobre nuestros servicios y solicitar una cotización
+                 </p>
+                 <a href="#contacto" class="bg-esga-orange text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors inline-block">
+                     Solicitar Cotización
+                 </a>
+             </div>
+         </div>
+     </section>
+
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+         <div class="container mx-auto px-4">
+             <div class="text-center mb-16">
+                 <h2 class="text-4xl font-bold text-esga-blue mb-4">Contáctanos</h2>
+                 <p class="text-xl text-esga-gray max-w-3xl mx-auto">
+                     Solicita una cotización o consulta sobre nuestros servicios
+                 </p>
+             </div>
+
+             <div class="grid lg:grid-cols-2 gap-12">
+                 <!-- Formulario de Contacto -->
+                 <div class="bg-gray-50 rounded-xl p-8">
+                     <h3 class="text-2xl font-bold text-esga-blue mb-6">Solicita tu Cotización</h3>
+                     <form id="contact-form" class="space-y-6">
+                         <!-- Mensaje de éxito/error -->
+                         <div id="form-message" class="hidden p-4 rounded-lg text-center font-semibold"></div>
+                         
+                         <div class="grid md:grid-cols-2 gap-6">
+                             <div>
+                                 <label class="block text-esga-blue font-semibold mb-2">Nombre Completo *</label>
+                                 <input type="text" name="user_name" id="user_name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-esga-blue focus:border-transparent">
+                             </div>
+                             <div>
+                                 <label class="block text-esga-blue font-semibold mb-2">Email *</label>
+                                 <input type="email" name="user_email" id="user_email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-esga-blue focus:border-transparent">
+                             </div>
+                         </div>
+                         <div>
+                             <label class="block text-esga-blue font-semibold mb-2">Teléfono *</label>
+                             <input type="tel" name="user_phone" id="user_phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-esga-blue focus:border-transparent">
+                         </div>
+                         <div>
+                             <label class="block text-esga-blue font-semibold mb-2">Servicio de Interés *</label>
+                             <select name="service" id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-esga-blue focus:border-transparent">
+                                 <option value="">Seleccione un servicio</option>
+                                 <option value="Tomografías Eléctricas">Tomografías Eléctricas</option>
+                                 <option value="Sísmica de Refracción">Sísmica de Refracción</option>
+                                 <option value="Estudios Geoeléctricos">Estudios Geoeléctricos</option>
+                                 <option value="Exploración Minera">Exploración Minera</option>
+                                 <option value="Estudios de Suelos">Estudios de Suelos</option>
+                                 <option value="Gestión del Riesgo">Gestión del Riesgo</option>
+                             </select>
+                         </div>
+                         <div>
+                             <label class="block text-esga-blue font-semibold mb-2">Mensaje *</label>
+                             <textarea name="message" id="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-esga-blue focus:border-transparent" placeholder="Describe tu proyecto o consulta..."></textarea>
+                         </div>
+                         <button type="submit" id="submit-btn" class="w-full bg-esga-orange text-white py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                             <span id="btn-text">Enviar Mensaje</span>
+                             <span id="btn-loading" class="hidden">Enviando...</span>
+                         </button>
+                     </form>
+                 </div>
+
+                 <!-- Información de Contacto -->
+                 <div class="space-y-8">
+                     <div>
+                         <h3 class="text-2xl font-bold text-esga-blue mb-6">Información de Contacto</h3>
+                         <div class="space-y-4">
+                             <div class="flex items-start">
+                                 <div class="w-10 h-10 bg-gradient-to-br from-esga-blue to-esga-light-blue rounded-lg flex items-center justify-center mr-4 mt-1">
+                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-esga-blue">Oficina Principal</h4>
+                                     <p class="text-esga-gray">carrera 20 #24-174 sogamoso boyaca, edificio bello</p>
+                                     <p class="text-esga-gray">Cobertura nacional e internacional</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start">
+                                 <div class="w-10 h-10 bg-gradient-to-br from-esga-orange to-orange-500 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-esga-blue">Teléfono</h4>
+                                     <p class="text-esga-gray">
+                                         <a href="https://wa.me/573124591696" target="_blank" class="hover:text-esga-blue transition-colors flex items-center">
+                                             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                             </svg>
+                                             +57 3124591696
+                                         </a>
+                                     </p>
+                                     <p class="text-esga-gray">+57 3168674412</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start">
+                                 <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-esga-blue">Email</h4>
+                                     <p class="text-esga-gray">empresaesga@hotmail.com</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start">
+                                 <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-esga-blue">Horarios de Atención</h4>
+                                     <p class="text-esga-gray">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                                     <p class="text-esga-gray">Sábados: 9:00 AM - 1:00 PM</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- WhatsApp Contact Button -->
+                     <div class="mb-8">
+                         <a href="https://wa.me/573124591696?text=Hola%20ESGA%20SAS,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20tomografía%20eléctrica" 
+                            target="_blank" 
+                            class="inline-flex items-center px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                             <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                             </svg>
+                             ¡Contáctanos por WhatsApp!
+                         </a>
+                     </div>
+
+                     <!-- Redes Sociales -->
+                     <div>
+                         <h4 class="font-semibold text-esga-blue mb-4">Síguenos</h4>
+                         <div class="flex space-x-4">
+                             <a href="#" class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                 </svg>
+                             </a>
+                             <a href="https://www.facebook.com/profile.php?id=100064087063265&locale=es_LA" target="_blank" class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                 </svg>
+                             </a>
+                             <a href="https://www.instagram.com/esga_sas/" target="_blank" class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                 </svg>
+                             </a>
+                             <a href="#" class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                 </svg>
+                             </a>
+                             <a href="#" class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                 </svg>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <!-- Footer -->
+     <footer class="bg-esga-blue text-white py-12">
+         <div class="container mx-auto px-4">
+             <div class="grid md:grid-cols-4 gap-8">
+                 <div>
+                     <div class="flex items-center space-x-3 mb-4">
+                         <div class="flex items-center">
+                             <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="h-12 w-auto object-contain logo-header">
+                         </div>
+                         <div>
+                             <h3 class="text-xl font-bold">ESGA SAS</h3>
+                             <p class="text-sm text-blue-200">Estudios de Suelos, Geología y Ambiental</p>
+                         </div>
+                     </div>
+                     <p class="text-blue-200 text-sm">
+                         Especialistas en estudios geofísicos y ambientales con más de 10 años de experiencia 
+                         en Colombia y Latinoamérica.
+                     </p>
+                 </div>
+
+                 <div>
+                     <h4 class="font-semibold mb-4">Servicios</h4>
+                     <ul class="space-y-2 text-sm text-blue-200">
+                         <li><a href="#servicios" class="hover:text-white transition-colors">Tomografías Eléctricas</a></li>
+                         <li><a href="#servicios" class="hover:text-white transition-colors">Sísmica de Refracción</a></li>
+                         <li><a href="#servicios" class="hover:text-white transition-colors">Exploración Minera</a></li>
+                     </ul>
+                 </div>
+
+                 <div>
+                     <h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
+                     <ul class="space-y-2 text-sm text-blue-200">
+                         <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                         <li><a href="#servicios" class="hover:text-white transition-colors">Servicios</a></li>
+                         <li><a href="#simulaciones" class="hover:text-white transition-colors">Simulaciones</a></li>
+                         <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                     </ul>
+                 </div>
+
+                 <div>
+                     <h4 class="font-semibold mb-4">Contacto</h4>
+                     <ul class="space-y-2 text-sm text-blue-200">
+                         <li>carrera 20 #24-174 sogamoso boyaca, edificio bello</li>
+                         <li>
+                             <a href="https://wa.me/573124591696" target="_blank" class="hover:text-white transition-colors flex items-center">
+                                 <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                 </svg>
+                                 +57 3124591696
+                             </a>
+                         </li>
+                         <li>+57 3168674412</li>
+                         <li>empresaesga@hotmail.com</li>
+                         <li>Lun-Vie: 8:00 AM - 6:00 PM</li>
+                     </ul>
+                 </div>
+             </div>
+
+             <div class="border-t border-blue-600 mt-8 pt-8 text-center">
+                 <p class="text-blue-200 text-sm">
+                     © 2024 ESGA SAS - Estudios de Suelos Geología y Ambiental. Todos los derechos reservados.
+                 </p>
+                 <div class="flex justify-center space-x-6 mt-4 text-sm text-blue-200">
+                     <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+                     <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
+                     <a href="#" class="hover:text-white transition-colors">Mapa del Sitio</a>
+                 </div>
+             </div>
+         </div>
+     </footer>
+
+     <!-- Modal para Imágenes -->
+     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+         <div class="relative max-w-4xl max-h-full">
+             <button onclick="closeImageModal()" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
+                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                 </svg>
+             </button>
+             <div id="modalContent" class="bg-white rounded-lg shadow-2xl overflow-hidden">
+                 <!-- El contenido se cargará dinámicamente -->
+             </div>
+         </div>
+     </div>
+
+     <!-- JavaScript -->
+     <script>
+         // Mobile Menu Toggle
+         function initializeMobileMenu() {
+             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+             const mobileMenu = document.getElementById('mobile-menu');
+             const menuIcon = document.getElementById('menu-icon');
+             const closeIcon = document.getElementById('close-icon');
+
+             if (!mobileMenuBtn || !mobileMenu || !menuIcon || !closeIcon) {
+                 console.warn('Mobile menu elements not found');
+                 return;
+             }
+
+             mobileMenuBtn.addEventListener('click', () => {
+                 const isHidden = mobileMenu.classList.contains('hidden');
+                 
+                 if (isHidden) {
+                     // Show menu
+                     mobileMenu.classList.remove('hidden');
+                     mobileMenu.classList.add('animate-in');
+                     menuIcon.classList.add('hidden');
+                     closeIcon.classList.remove('hidden');
+                     
+                     // Prevent body scroll
+                     document.body.style.overflow = 'hidden';
+                 } else {
+                     // Hide menu
+                     mobileMenu.classList.add('hidden');
+                     mobileMenu.classList.remove('animate-in');
+                     menuIcon.classList.remove('hidden');
+                     closeIcon.classList.add('hidden');
+                     
+                     // Restore body scroll
+                     document.body.style.overflow = '';
+                 }
+             });
+
+             // Close mobile menu when clicking on a link
+             document.querySelectorAll('#mobile-menu a').forEach(link => {
+                 link.addEventListener('click', () => {
+                     mobileMenu.classList.add('hidden');
+                     mobileMenu.classList.remove('animate-in');
+                     menuIcon.classList.remove('hidden');
+                     closeIcon.classList.add('hidden');
+                     document.body.style.overflow = '';
+                 });
+             });
+
+             // Close mobile menu when clicking outside
+             document.addEventListener('click', (e) => {
+                 if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                     mobileMenu.classList.add('hidden');
+                     mobileMenu.classList.remove('animate-in');
+                     menuIcon.classList.remove('hidden');
+                     closeIcon.classList.add('hidden');
+                     document.body.style.overflow = '';
+                 }
+             });
+
+             console.log('Mobile menu initialized successfully');
+         }
+
+         // Back to Top Button
+
+
+         // Smooth Scrolling for Navigation Links
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+             anchor.addEventListener('click', function (e) {
+                 e.preventDefault();
+                 const target = document.querySelector(this.getAttribute('href'));
+                 if (target) {
+                     target.scrollIntoView({
+                         behavior: 'smooth',
+                         block: 'start'
+                     });
+                 }
+             });
+         });
+
+         // Tomography Simulation
+         class TomographySimulator {
+             constructor() {
+                 console.log('TomographySimulator constructor called');
+                 
+                 // Check if canvas elements exist
+                 this.canvas = document.getElementById('tomography-canvas');
+                 this.interpretationCanvas = document.getElementById('interpretation-canvas');
+                 
+                 if (!this.canvas) {
+                     console.error('tomography-canvas not found!');
+                     return;
+                 }
+                 
+                 if (!this.interpretationCanvas) {
+                     console.error('interpretation-canvas not found!');
+                     return;
+                 }
+                 
+                 this.ctx = this.canvas.getContext('2d');
+                 this.interpretationCtx = this.interpretationCanvas.getContext('2d');
+                 this.currentCase = 'mining';
+                 this.depth = 35;
+                 
+                 console.log('Canvas elements found, initializing...');
+                 this.init();
+             }
+
+             init() {
+                 console.log('Initializing TomographySimulator...');
+                 this.setupCanvas();
+                 this.bindEvents();
+                 
+                 // Test if canvas is working by drawing a simple test pattern
+                 this.testCanvas();
+                 
+                 this.render();
+                 console.log('TomographySimulator initialized successfully');
+             }
+
+             testCanvas() {
+                 console.log('Testing canvas functionality...');
+                 
+                 // Draw a simple test pattern on both canvases
+                 this.ctx.fillStyle = '#ff0000';
+                 this.ctx.fillRect(0, 0, 50, 50);
+                 
+                 this.interpretationCtx.fillStyle = '#00ff00';
+                 this.interpretationCtx.fillRect(0, 0, 50, 50);
+                 
+                 console.log('Test pattern drawn - you should see red and green squares');
+             }
+
+            setupCanvas() {
+                this.resizeCanvas();
+                
+                // Add resize event listener
+                window.addEventListener('resize', () => {
+                    this.resizeCanvas();
+                    this.render(); // Re-render after resize
+                });
+            }
+            
+            resizeCanvas() {
+                // Get container dimensions
+                const container = this.canvas.parentElement;
+                const containerWidth = container.offsetWidth;
+                
+                // Calculate responsive dimensions
+                let canvasSize;
+                if (window.innerWidth < 768) {
+                    // Mobile: smaller canvas
+                    canvasSize = Math.min(containerWidth - 32, 300);
+                } else if (window.innerWidth < 1024) {
+                    // Tablet: medium canvas
+                    canvasSize = Math.min(containerWidth - 32, 350);
+                } else {
+                    // Desktop: full size
+                    canvasSize = 400;
+                }
+                
+                // Set canvas internal dimensions
+                this.canvas.width = canvasSize;
+                this.canvas.height = canvasSize;
+                this.interpretationCanvas.width = canvasSize;
+                this.interpretationCanvas.height = canvasSize;
+                
+                // Set CSS dimensions for responsive display
+                this.canvas.style.width = canvasSize + 'px';
+                this.canvas.style.height = canvasSize + 'px';
+                this.interpretationCanvas.style.width = canvasSize + 'px';
+                this.interpretationCanvas.style.height = canvasSize + 'px';
+                
+                // Update canvas context references
+                this.ctx = this.canvas.getContext('2d');
+                this.interpretationCtx = this.interpretationCanvas.getContext('2d');
+            }
+
+             bindEvents() {
+                 // Simulation case buttons
+                 const simulationButtons = document.querySelectorAll('.simulation-btn');
+                 if (simulationButtons.length > 0) {
+                     simulationButtons.forEach(btn => {
+                         btn.addEventListener('click', (e) => {
+                             this.switchCase(e.target.dataset.case);
+                         });
+                     });
+                     console.log('Simulation buttons bound successfully');
+                 } else {
+                     console.warn('No simulation buttons found');
+                 }
+
+                 // Depth slider
+                 const depthSlider = document.getElementById('depth-slider');
+                 const depthValue = document.getElementById('depth-value');
+                 
+                 if (depthSlider && depthValue) {
+                     depthSlider.addEventListener('input', (e) => {
+                         this.depth = parseInt(e.target.value);
+                         depthValue.textContent = this.depth + 'm';
+                         this.render();
+                     });
+                     console.log('Depth slider bound successfully');
+                 } else {
+                     console.warn('Depth slider or depth value element not found');
+                 }
+
+                 // Export button
+                 const exportBtn = document.getElementById('export-btn');
+                 if (exportBtn) {
+                     exportBtn.addEventListener('click', () => {
+                         this.exportResults();
+                     });
+                     console.log('Export button bound successfully');
+                 } else {
+                     console.warn('Export button not found');
+                 }
+             }
+
+             switchCase(caseType) {
+                 this.currentCase = caseType;
+                 
+                 // Update button states
+                 const simulationButtons = document.querySelectorAll('.simulation-btn');
+                 if (simulationButtons.length > 0) {
+                     simulationButtons.forEach(btn => {
+                         btn.classList.remove('active', 'bg-esga-blue', 'text-white');
+                         btn.classList.add('bg-white', 'text-esga-blue', 'border-2', 'border-esga-blue');
+                     });
+                     
+                     const activeBtn = document.querySelector(`[data-case="${caseType}"]`);
+                     if (activeBtn) {
+                         activeBtn.classList.remove('bg-white', 'text-esga-blue', 'border-2', 'border-esga-blue');
+                         activeBtn.classList.add('active', 'bg-esga-blue', 'text-white');
+                     }
+                 }
+
+                 // Update title and interpretation
+                 this.updateInterpretation();
+                 this.render();
+             }
+
+             updateInterpretation() {
+                 const title = document.getElementById('simulation-title');
+                 const content = document.getElementById('interpretation-content');
+                 
+                 if (!title || !content) {
+                     console.warn('Title or content elements not found for interpretation update');
+                     return;
+                 }
+                 
+                 const interpretations = {
+                     mining: {
+                         title: 'Exploración Minera',
+                         content: `
+                             <p class="mb-4">
+                                 <strong>Anomalías Detectadas:</strong> Se observan estructuras de baja resistividad (2-50 Ω⋅m) 
+                                 que sugieren la presencia de mineralización y fracturas geológicas.
+                             </p>
+                             <p class="mb-4">
+                                 <strong>Estructuras Geológicas:</strong> Capas de roca sedimentaria con intercalaciones 
+                                 de material más conductor, posiblemente asociado a fluidos mineralizados.
+                             </p>
+                             <p>
+                                 <strong>Recomendaciones:</strong> Se sugiere realizar perforaciones de confirmación 
+                                 en las zonas de anomalía para validar la presencia de mineralización.
+                             </p>
+                         `
+                     },
+                     water: {
+                         title: 'Recursos Hídricos',
+                         content: `
+                             <p class="mb-4">
+                                 <strong>Acuíferos Detectados:</strong> Zonas de baja resistividad (5-30 Ω⋅m) 
+                                 indican la presencia de acuíferos y flujo de agua subterránea.
+                             </p>
+                             <p class="mb-4">
+                                 <strong>Estructuras Hidrogeológicas:</strong> Capas permeables intercaladas con 
+                                 materiales impermeables, formando sistemas acuíferos confinados.
+                             </p>
+                             <p>
+                                 <strong>Recomendaciones:</strong> Evaluar la calidad del agua y realizar 
+                                 estudios de bombeo para determinar parámetros hidráulicos.
+                             </p>
+                         `
+                     },
+                     civil: {
+                         title: 'Ingeniería Civil',
+                         content: `
+                             <p class="mb-4">
+                                 <strong>Cavidades Detectadas:</strong> Anomalías de alta resistividad (500-2000 Ω⋅m) 
+                                 sugieren la presencia de cavidades y fracturas en el subsuelo.
+                             </p>
+                             <p class="mb-4">
+                                 <strong>Estabilidad del Terreno:</strong> Variaciones en la resistividad indican 
+                                 diferentes tipos de suelo y posibles zonas de inestabilidad.
+                             </p>
+                             <p>
+                                 <strong>Recomendaciones:</strong> Realizar estudios geotécnicos complementarios 
+                                 y evaluar la necesidad de cimentaciones especiales.
+                             </p>
+                         `
+                     },
+                     environmental: {
+                         title: 'Estudios Ambientales',
+                         content: `
+                             <p class="mb-4">
+                                 <strong>Contaminación Detectada:</strong> Zonas de muy baja resistividad (2-10 Ω⋅m) 
+                                 indican posible contaminación por hidrocarburos o metales pesados.
+                             </p>
+                             <p class="mb-4">
+                                 <strong>Plumas Contaminantes:</strong> Se observa la migración de contaminantes 
+                                 en dirección del flujo subterráneo.
+                             </p>
+                             <p>
+                                 <strong>Recomendaciones:</strong> Implementar programa de monitoreo y 
+                                 diseñar estrategias de remediación específicas.
+                             </p>
+                         `
+                     }
+                 };
+
+                 title.textContent = interpretations[this.currentCase].title;
+                 content.innerHTML = interpretations[this.currentCase].content;
+             }
+
+             render() {
+                 console.log('Rendering simulation for case:', this.currentCase);
+                 
+                 // Clear both canvases
+                 this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                 this.interpretationCtx.clearRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                 
+                 // Draw resistivity data based on case
+                 this.drawResistivityData();
+                 
+                // Always draw depth line for mining, water, civil, and environmental cases on both canvases
+                if (this.currentCase === 'mining' || this.currentCase === 'water' || this.currentCase === 'civil' || this.currentCase === 'environmental') {
+                    console.log(`${this.currentCase} case detected, images should be drawn by drawResistivityData`);
+                    // The depth lines will be drawn by the image loading functions
+                    // This ensures they appear on top of the images
+                }
+                 
+                 console.log('Render completed');
+             }
+
+             drawGrid() {
+                 this.ctx.strokeStyle = '#e2e8f0';
+                 this.ctx.lineWidth = 1;
+                 
+                 // Vertical lines
+                 for (let x = 0; x <= this.canvas.width; x += 50) {
+                     this.ctx.beginPath();
+                     this.ctx.moveTo(x, 0);
+                     this.ctx.lineTo(x, this.canvas.height);
+                     this.ctx.stroke();
+                 }
+                 
+                 // Horizontal lines
+                 for (let y = 0; y <= this.canvas.height; y += 40) {
+                     this.ctx.beginPath();
+                     this.ctx.moveTo(0, y);
+                     this.ctx.lineTo(this.canvas.width, y);
+                     this.ctx.stroke();
+                 }
+             }
+
+             drawGridOnInterpretation() {
+                 this.interpretationCtx.strokeStyle = '#e2e8f0';
+                 this.interpretationCtx.lineWidth = 1;
+                 
+                 // Vertical lines
+                 for (let x = 0; x <= this.interpretationCanvas.width; x += 50) {
+                     this.interpretationCtx.beginPath();
+                     this.interpretationCtx.moveTo(x, 0);
+                     this.interpretationCtx.lineTo(x, this.interpretationCanvas.height);
+                     this.interpretationCtx.stroke();
+                 }
+                 
+                 // Horizontal lines
+                 for (let y = 0; y <= this.interpretationCanvas.height; y += 40) {
+                     this.interpretationCtx.beginPath();
+                     this.interpretationCtx.moveTo(0, y);
+                     this.interpretationCtx.lineTo(this.interpretationCanvas.width, y);
+                     this.interpretationCtx.stroke();
+                 }
+             }
+
+             drawTopography() {
+                 this.ctx.strokeStyle = '#1e3a8a';
+                 this.ctx.lineWidth = 2;
+                 this.ctx.beginPath();
+                 
+                 // Create irregular topography
+                 let x = 0;
+                 let y = 20;
+                 this.ctx.moveTo(x, y);
+                 
+                 while (x < this.canvas.width) {
+                     x += 20;
+                     y = 20 + Math.sin(x * 0.01) * 10 + Math.random() * 5;
+                     this.ctx.lineTo(x, y);
+                 }
+                 
+                 this.ctx.stroke();
+             }
+
+             drawTopographyOnInterpretation() {
+                 this.interpretationCtx.strokeStyle = '#1e3a8a';
+                 this.interpretationCtx.lineWidth = 2;
+                 this.interpretationCtx.beginPath();
+                 
+                 // Create irregular topography
+                 let x = 0;
+                 let y = 20;
+                 this.interpretationCtx.moveTo(x, y);
+                 
+                 while (x < this.interpretationCanvas.width) {
+                     x += 20;
+                     y = 20 + Math.sin(x * 0.01) * 10 + Math.random() * 5;
+                     this.interpretationCtx.lineTo(x, y);
+                 }
+                 
+                 this.interpretationCtx.stroke();
+             }
+
+            drawResistivityData() {
+                console.log('Drawing resistivity data for case:', this.currentCase);
+                
+                // Special case for mining: use both images for twin panels
+                if (this.currentCase === 'mining') {
+                    console.log('Drawing mining images...');
+                    this.drawMiningImage();
+                    this.drawInterpretationImage();
+                    return;
+                }
+                
+                // Special case for water: use both hydrogeology images for twin panels
+                if (this.currentCase === 'water') {
+                    console.log('Drawing water/hydrogeology images...');
+                    this.drawWaterImage();
+                    this.drawWaterInterpretationImage();
+                    return;
+                }
+                
+                // Special case for civil: use both cavity images for twin panels
+                if (this.currentCase === 'civil') {
+                    console.log('Drawing civil/cavity images...');
+                    this.drawCivilImage();
+                    this.drawCivilInterpretationImage();
+                    return;
+                }
+                
+                // Special case for environmental: use both plume images for twin panels
+                if (this.currentCase === 'environmental') {
+                    console.log('Drawing environmental/plume images...');
+                    this.drawEnvironmentalImage();
+                    this.drawEnvironmentalInterpretationImage();
+                    return;
+                }
+                 
+                 // For other cases, draw resistivity data on both canvases
+                 const data = this.generateResistivityData();
+                 const cellWidth = this.canvas.width / data[0].length;
+                 const cellHeight = (this.canvas.height - 40) / data.length;
+                 
+                 // Draw on main canvas
+                 for (let i = 0; i < data.length; i++) {
+                     for (let j = 0; j < data[i].length; j++) {
+                         const value = data[i][j];
+                         const color = this.getResistivityColor(value);
+                         
+                         this.ctx.fillStyle = color;
+                         this.ctx.fillRect(
+                             j * cellWidth,
+                             40 + i * cellHeight,
+                             cellWidth,
+                             cellHeight
+                         );
+                     }
+                 }
+                 
+                 // Draw on interpretation canvas
+                 for (let i = 0; i < data.length; i++) {
+                     for (let j = 0; j < data[i].length; j++) {
+                         const value = data[i][j];
+                         const color = this.getResistivityColor(value);
+                         
+                         this.interpretationCtx.fillStyle = color;
+                         this.interpretationCtx.fillRect(
+                             j * cellWidth,
+                             40 + i * cellHeight,
+                             cellWidth,
+                             cellHeight
+                         );
+                     }
+                 }
+                 
+                 // Add annotations to both canvases
+                 this.drawAnnotations();
+                 this.drawInterpretationAnnotations();
+             }
+
+             generateResistivityData() {
+                 const width = 80;
+                 const height = 60;
+                 const data = [];
+                 
+                 for (let i = 0; i < height; i++) {
+                     data[i] = [];
+                     for (let j = 0; j < width; j++) {
+                         let value = 100 + Math.random() * 900; // Base resistivity
+                         
+                         // Add case-specific anomalies
+                         switch (this.currentCase) {
+                             case 'mining':
+                                 // Add mineralized zones
+                                 if (Math.random() < 0.1) {
+                                     value = 10 + Math.random() * 40; // Low resistivity for mineralization
+                                 }
+                                 break;
+                             case 'water':
+                                 // Add aquifer zones
+                                 if (Math.random() < 0.15) {
+                                     value = 5 + Math.random() * 25; // Very low resistivity for water
+                                 }
+                                 break;
+                             case 'civil':
+                                 // Add cavities and fractures
+                                 if (Math.random() < 0.08) {
+                                     value = 500 + Math.random() * 1500; // High resistivity for cavities
+                                 }
+                                 break;
+                             case 'environmental':
+                                 // Add contamination zones
+                                 if (Math.random() < 0.12) {
+                                     value = 2 + Math.random() * 8; // Very low resistivity for contamination
+                                 }
+                                 break;
+                         }
+                         
+                         data[i][j] = value;
+                     }
+                 }
+                 
+                 return data;
+             }
+
+             drawMiningImage() {
+                 console.log('Drawing mining image...');
+                 
+                 // Create an image object for the mining simulation
+                 const img = new Image();
+                 
+                 img.onload = () => {
+                     console.log('Mining image loaded successfully');
+                     
+                     // Clear the canvas first
+                     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                     
+                     // Calculate aspect ratio to prevent stretching
+                     const imgAspect = img.width / img.height;
+                     const canvasAspect = this.canvas.width / this.canvas.height;
+                     
+                     let drawWidth, drawHeight, offsetX, offsetY;
+                     
+                     if (imgAspect > canvasAspect) {
+                         // Image is wider than canvas - fit to width
+                         drawWidth = this.canvas.width;
+                         drawHeight = this.canvas.width / imgAspect;
+                         offsetX = 0;
+                         offsetY = (this.canvas.height - drawHeight) / 2;
+                     } else {
+                         // Image is taller than canvas - fit to height
+                         drawHeight = this.canvas.height;
+                         drawWidth = this.canvas.height * imgAspect;
+                         offsetX = (this.canvas.width - drawWidth) / 2;
+                         offsetY = 0;
+                     }
+                     
+                     // Draw the image with proper aspect ratio
+                     this.ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                     
+                     // Add a semi-transparent overlay to maintain readability
+                     this.ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                     
+                     // Add some interpretation annotations
+                     this.drawMiningAnnotations();
+                     
+                     // Draw the dynamic depth line
+                     this.drawDepthLine();
+                     
+                     console.log('Mining image drawing completed');
+                 };
+                 
+                 img.onerror = (error) => {
+                     console.error('Error loading mining image:', error);
+                     console.log('Drawing fallback background...');
+                     
+                     // Fallback: draw a colored background
+                     this.ctx.fillStyle = '#1e3a8a';
+                     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                     
+                     // Add grid pattern
+                     this.ctx.strokeStyle = '#ffffff';
+                     this.ctx.lineWidth = 1;
+                     for (let i = 0; i < this.canvas.width; i += 20) {
+                         this.ctx.beginPath();
+                         this.ctx.moveTo(i, 0);
+                         this.ctx.lineTo(i, this.canvas.height);
+                         this.ctx.stroke();
+                     }
+                     for (let i = 0; i < this.canvas.height; i += 20) {
+                         this.ctx.beginPath();
+                         this.ctx.moveTo(0, i);
+                         this.ctx.lineTo(this.canvas.width, i);
+                         this.ctx.stroke();
+                     }
+                     
+                     this.drawMiningAnnotations();
+                     this.drawDepthLine();
+                     console.log('Fallback drawing completed');
+                 };
+                 
+                 // Set the source to the mineria.jpg image
+                 console.log('Loading image from: images/mineria.jpg');
+                 img.src = 'images/mineria.jpg';
+             }
+
+             drawInterpretationImage() {
+                 console.log('Drawing interpretation image...');
+                 
+                 // Create an image object for the interpretation simulation
+                 const img = new Image();
+                 
+                 img.onload = () => {
+                     console.log('Interpretation image loaded successfully');
+                     
+                     // Clear the canvas first
+                     this.interpretationCtx.clearRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                     
+                     // Calculate aspect ratio to prevent stretching
+                     const imgAspect = img.width / img.height;
+                     const canvasAspect = this.interpretationCanvas.width / this.interpretationCanvas.height;
+                     
+                     let drawWidth, drawHeight, offsetX, offsetY;
+                     
+                     if (imgAspect > canvasAspect) {
+                         // Image is wider than canvas - fit to width
+                         drawWidth = this.interpretationCanvas.width;
+                         drawHeight = this.interpretationCanvas.width / imgAspect;
+                         offsetX = 0;
+                         offsetY = (this.interpretationCanvas.height - drawHeight) / 2;
+                     } else {
+                         // Image is taller than canvas - fit to height
+                         drawHeight = this.interpretationCanvas.height;
+                         drawWidth = this.interpretationCanvas.height * imgAspect;
+                         offsetX = (this.interpretationCanvas.width - drawWidth) / 2;
+                         offsetY = 0;
+                     }
+                     
+                     // Draw the image with proper aspect ratio
+                     this.interpretationCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                     
+                     // Add a semi-transparent overlay to maintain readability
+                     this.interpretationCtx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                     this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                     
+                     // Add some interpretation annotations
+                     this.drawInterpretationAnnotations();
+                     
+                     // Draw the dynamic depth line
+                     this.drawDepthLineOnInterpretation();
+                     
+                     console.log('Interpretation image drawing completed');
+                 };
+                 
+                 img.onerror = (error) => {
+                     console.error('Error loading interpretation image:', error);
+                     console.log('Drawing fallback background...');
+                     
+                     // Fallback: draw a colored background
+                     this.interpretationCtx.fillStyle = '#3b82f6';
+                     this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                     
+                     // Add grid pattern
+                     this.interpretationCtx.strokeStyle = '#ffffff';
+                     this.interpretationCtx.lineWidth = 1;
+                     for (let i = 0; i < this.interpretationCanvas.width; i += 20) {
+                         this.interpretationCtx.beginPath();
+                         this.interpretationCtx.moveTo(i, 0);
+                         this.interpretationCtx.lineTo(i, this.interpretationCanvas.height);
+                         this.interpretationCtx.stroke();
+                     }
+                     for (let i = 0; i < this.interpretationCanvas.height; i += 20) {
+                         this.interpretationCtx.beginPath();
+                         this.interpretationCtx.moveTo(0, i);
+                         this.interpretationCtx.lineTo(this.interpretationCanvas.width, i);
+                         this.interpretationCtx.stroke();
+                     }
+                     
+                     this.drawInterpretationAnnotations();
+                     this.drawDepthLineOnInterpretation();
+                     console.log('Fallback drawing completed');
+                 };
+                 
+                // Set the source to the mineriainterpret.jpg image
+                console.log('Loading image from: images/mineriainterpret.jpg');
+                img.src = 'images/mineriainterpret.jpg';
+            }
+
+            drawWaterImage() {
+                console.log('Drawing water/hydrogeology image...');
+                
+                // Create an image object for the water simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Water image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.canvas.width / this.canvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.canvas.width;
+                        drawHeight = this.canvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.canvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.canvas.height;
+                        drawWidth = this.canvas.height * imgAspect;
+                        offsetX = (this.canvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawWaterAnnotations();
+                    
+                    // Draw the dynamic depth line
+                    this.drawDepthLine();
+                    
+                    console.log('Water image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading water image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.ctx.fillStyle = '#3b82f6';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add grid pattern
+                    this.ctx.strokeStyle = '#ffffff';
+                    this.ctx.lineWidth = 1;
+                    for (let i = 0; i < this.canvas.width; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(i, 0);
+                        this.ctx.lineTo(i, this.canvas.height);
+                        this.ctx.stroke();
+                    }
+                    for (let i = 0; i < this.canvas.height; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(0, i);
+                        this.ctx.lineTo(this.canvas.width, i);
+                        this.ctx.stroke();
+                    }
+                    
+                    this.drawWaterAnnotations();
+                    this.drawDepthLine();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the hidrogeologia1.jpg image
+                console.log('Loading image from: images/hidrogeologia1.jpg');
+                img.src = 'images/hidrogeologia1.jpg';
+            }
+
+            drawWaterInterpretationImage() {
+                console.log('Drawing water interpretation image...');
+                
+                // Create an image object for the water interpretation simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Water interpretation image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.interpretationCtx.clearRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.interpretationCanvas.width / this.interpretationCanvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.interpretationCanvas.width;
+                        drawHeight = this.interpretationCanvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.interpretationCanvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.interpretationCanvas.height;
+                        drawWidth = this.interpretationCanvas.height * imgAspect;
+                        offsetX = (this.interpretationCanvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.interpretationCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.interpretationCtx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawWaterInterpretationAnnotations();
+                    
+                    // Draw the dynamic depth line with water-specific offset
+                    this.drawWaterDepthLineOnInterpretation();
+                    
+                    console.log('Water interpretation image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading water interpretation image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.interpretationCtx.fillStyle = '#10b981';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add grid pattern
+                    this.interpretationCtx.strokeStyle = '#ffffff';
+                    this.interpretationCtx.lineWidth = 1;
+                    for (let i = 0; i < this.interpretationCanvas.width; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(i, 0);
+                        this.interpretationCtx.lineTo(i, this.interpretationCanvas.height);
+                        this.interpretationCtx.stroke();
+                    }
+                    for (let i = 0; i < this.interpretationCanvas.height; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(0, i);
+                        this.interpretationCtx.lineTo(this.interpretationCanvas.width, i);
+                        this.interpretationCtx.stroke();
+                    }
+                    
+                    this.drawWaterInterpretationAnnotations();
+                    this.drawWaterDepthLineOnInterpretation();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the hidrogeologia2.jpg image
+                console.log('Loading image from: images/hidrogeologia2.jpg');
+                img.src = 'images/hidrogeologia2.jpg';
+            }
+
+            drawCivilImage() {
+                console.log('Drawing civil/cavity image...');
+                
+                // Create an image object for the civil simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Civil image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.canvas.width / this.canvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.canvas.width;
+                        drawHeight = this.canvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.canvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.canvas.height;
+                        drawWidth = this.canvas.height * imgAspect;
+                        offsetX = (this.canvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawCivilAnnotations();
+                    
+                    // Draw the dynamic depth line
+                    this.drawDepthLine();
+                    
+                    console.log('Civil image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading civil image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.ctx.fillStyle = '#6b7280';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add grid pattern
+                    this.ctx.strokeStyle = '#ffffff';
+                    this.ctx.lineWidth = 1;
+                    for (let i = 0; i < this.canvas.width; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(i, 0);
+                        this.ctx.lineTo(i, this.canvas.height);
+                        this.ctx.stroke();
+                    }
+                    for (let i = 0; i < this.canvas.height; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(0, i);
+                        this.ctx.lineTo(this.canvas.width, i);
+                        this.ctx.stroke();
+                    }
+                    
+                    this.drawCivilAnnotations();
+                    this.drawDepthLine();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the cavidad1.png image
+                console.log('Loading image from: images/cavidad1.png');
+                img.src = 'images/cavidad1.png';
+            }
+
+            drawCivilInterpretationImage() {
+                console.log('Drawing civil interpretation image...');
+                
+                // Create an image object for the civil interpretation simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Civil interpretation image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.interpretationCtx.clearRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.interpretationCanvas.width / this.interpretationCanvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.interpretationCanvas.width;
+                        drawHeight = this.interpretationCanvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.interpretationCanvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.interpretationCanvas.height;
+                        drawWidth = this.interpretationCanvas.height * imgAspect;
+                        offsetX = (this.interpretationCanvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.interpretationCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.interpretationCtx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawCivilInterpretationAnnotations();
+                    
+                    // Draw the dynamic depth line with civil-specific offset
+                    this.drawCivilDepthLineOnInterpretation();
+                    
+                    console.log('Civil interpretation image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading civil interpretation image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.interpretationCtx.fillStyle = '#9ca3af';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add grid pattern
+                    this.interpretationCtx.strokeStyle = '#ffffff';
+                    this.interpretationCtx.lineWidth = 1;
+                    for (let i = 0; i < this.interpretationCanvas.width; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(i, 0);
+                        this.interpretationCtx.lineTo(i, this.interpretationCanvas.height);
+                        this.interpretationCtx.stroke();
+                    }
+                    for (let i = 0; i < this.interpretationCanvas.height; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(0, i);
+                        this.interpretationCtx.lineTo(this.interpretationCanvas.width, i);
+                        this.interpretationCtx.stroke();
+                    }
+                    
+                    this.drawCivilInterpretationAnnotations();
+                    this.drawCivilDepthLineOnInterpretation();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the cavidad2.png image
+                console.log('Loading image from: images/cavidad2.png');
+                img.src = 'images/cavidad2.png';
+            }
+
+            drawEnvironmentalImage() {
+                console.log('Drawing environmental/plume image...');
+                
+                // Create an image object for the environmental simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Environmental image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.canvas.width / this.canvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.canvas.width;
+                        drawHeight = this.canvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.canvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.canvas.height;
+                        drawWidth = this.canvas.height * imgAspect;
+                        offsetX = (this.canvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawEnvironmentalAnnotations();
+                    
+                    // Draw the dynamic depth line
+                    this.drawDepthLine();
+                    
+                    console.log('Environmental image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading environmental image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.ctx.fillStyle = '#059669';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    // Add grid pattern
+                    this.ctx.strokeStyle = '#ffffff';
+                    this.ctx.lineWidth = 1;
+                    for (let i = 0; i < this.canvas.width; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(i, 0);
+                        this.ctx.lineTo(i, this.canvas.height);
+                        this.ctx.stroke();
+                    }
+                    for (let i = 0; i < this.canvas.height; i += 20) {
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(0, i);
+                        this.ctx.lineTo(this.canvas.width, i);
+                        this.ctx.stroke();
+                    }
+                    
+                    this.drawEnvironmentalAnnotations();
+                    this.drawDepthLine();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the pluma1.jpg image
+                console.log('Loading image from: images/pluma1.jpg');
+                img.src = 'images/pluma1.jpg';
+            }
+
+            drawEnvironmentalInterpretationImage() {
+                console.log('Drawing environmental interpretation image...');
+                
+                // Create an image object for the environmental interpretation simulation
+                const img = new Image();
+                
+                img.onload = () => {
+                    console.log('Environmental interpretation image loaded successfully');
+                    
+                    // Clear the canvas first
+                    this.interpretationCtx.clearRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Calculate aspect ratio to prevent stretching
+                    const imgAspect = img.width / img.height;
+                    const canvasAspect = this.interpretationCanvas.width / this.interpretationCanvas.height;
+                    
+                    let drawWidth, drawHeight, offsetX, offsetY;
+                    
+                    if (imgAspect > canvasAspect) {
+                        // Image is wider than canvas - fit to width
+                        drawWidth = this.interpretationCanvas.width;
+                        drawHeight = this.interpretationCanvas.width / imgAspect;
+                        offsetX = 0;
+                        offsetY = (this.interpretationCanvas.height - drawHeight) / 2;
+                    } else {
+                        // Image is taller than canvas - fit to height
+                        drawHeight = this.interpretationCanvas.height;
+                        drawWidth = this.interpretationCanvas.height * imgAspect;
+                        offsetX = (this.interpretationCanvas.width - drawWidth) / 2;
+                        offsetY = 0;
+                    }
+                    
+                    // Draw the image with proper aspect ratio
+                    this.interpretationCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                    
+                    // Add a semi-transparent overlay to maintain readability
+                    this.interpretationCtx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add some interpretation annotations
+                    this.drawEnvironmentalInterpretationAnnotations();
+                    
+                    // Draw the dynamic depth line with environmental-specific offset
+                    this.drawEnvironmentalDepthLineOnInterpretation();
+                    
+                    console.log('Environmental interpretation image drawing completed');
+                };
+                
+                img.onerror = (error) => {
+                    console.error('Error loading environmental interpretation image:', error);
+                    console.log('Drawing fallback background...');
+                    
+                    // Fallback: draw a colored background
+                    this.interpretationCtx.fillStyle = '#10b981';
+                    this.interpretationCtx.fillRect(0, 0, this.interpretationCanvas.width, this.interpretationCanvas.height);
+                    
+                    // Add grid pattern
+                    this.interpretationCtx.strokeStyle = '#ffffff';
+                    this.interpretationCtx.lineWidth = 1;
+                    for (let i = 0; i < this.interpretationCanvas.width; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(i, 0);
+                        this.interpretationCtx.lineTo(i, this.interpretationCanvas.height);
+                        this.interpretationCtx.stroke();
+                    }
+                    for (let i = 0; i < this.interpretationCanvas.height; i += 20) {
+                        this.interpretationCtx.beginPath();
+                        this.interpretationCtx.moveTo(0, i);
+                        this.interpretationCtx.lineTo(this.interpretationCanvas.width, i);
+                        this.interpretationCtx.stroke();
+                    }
+                    
+                    this.drawEnvironmentalInterpretationAnnotations();
+                    this.drawEnvironmentalDepthLineOnInterpretation();
+                    console.log('Fallback drawing completed');
+                };
+                
+                // Set the source to the pluma2.jpg image
+                console.log('Loading image from: images/pluma2.jpg');
+                img.src = 'images/pluma2.jpg';
+            }
+
+            drawMiningAnnotations() {
+                // Add depth indicators only
+                this.ctx.fillStyle = '#ffd700';
+                this.ctx.font = '14px Arial';
+                this.ctx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.ctx.fillText('Escala: 1:1000', 20, 50);
+            }
+
+            drawWaterAnnotations() {
+                // Add depth indicators for water/hydrogeology
+                this.ctx.fillStyle = '#3b82f6';
+                this.ctx.font = '14px Arial';
+                this.ctx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.ctx.fillText('Escala: 1:1000', 20, 50);
+                this.ctx.fillText('Recursos Hídricos', 20, 70);
+            }
+
+            drawWaterInterpretationAnnotations() {
+                // Add depth indicators and interpretation text for water
+                this.interpretationCtx.fillStyle = '#10b981';
+                this.interpretationCtx.font = '14px Arial';
+                this.interpretationCtx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.interpretationCtx.fillText('Escala: 1:1000', 20, 50);
+                this.interpretationCtx.fillText('Interpretación - Acuíferos', 20, 70);
+            }
+
+            drawCivilAnnotations() {
+                // Add depth indicators for civil/cavity
+                this.ctx.fillStyle = '#6b7280';
+                this.ctx.font = '14px Arial';
+                this.ctx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.ctx.fillText('Escala: 1:1000', 20, 50);
+                this.ctx.fillText('Ingeniería Civil', 20, 70);
+            }
+
+            drawCivilInterpretationAnnotations() {
+                // Add depth indicators and interpretation text for civil
+                this.interpretationCtx.fillStyle = '#9ca3af';
+                this.interpretationCtx.font = '14px Arial';
+                this.interpretationCtx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.interpretationCtx.fillText('Escala: 1:1000', 20, 50);
+                this.interpretationCtx.fillText('Interpretación - Cavidades', 20, 70);
+            }
+
+            drawEnvironmentalAnnotations() {
+                // Add depth indicators for environmental/plume
+                this.ctx.fillStyle = '#059669';
+                this.ctx.font = '14px Arial';
+                this.ctx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.ctx.fillText('Escala: 1:1000', 20, 50);
+                this.ctx.fillText('Estudios Ambientales', 20, 70);
+            }
+
+            drawEnvironmentalInterpretationAnnotations() {
+                // Add depth indicators and interpretation text for environmental
+                this.interpretationCtx.fillStyle = '#10b981';
+                this.interpretationCtx.font = '14px Arial';
+                this.interpretationCtx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                this.interpretationCtx.fillText('Escala: 1:1000', 20, 50);
+                this.interpretationCtx.fillText('Interpretación - Plumas Contaminantes', 20, 70);
+            }
+
+            drawWaterDepthLineOnInterpretation() {
+                // Draw a dynamic horizontal line for water interpretation with -2m offset
+                const maxDepth = 100; // Maximum depth in meters
+                const canvasHeight = this.interpretationCanvas.height;
+                
+                // Offset to align depth 0 with the current 43m position, with -2m adjustment for water
+                const depthOffset = 43; // meters
+                const adjustedDepth = this.depth + depthOffset - 2;
+                
+                // Calculate the Y position based on adjusted depth (inverted: 0m = top, 100m = bottom)
+                const depthY = (adjustedDepth / maxDepth) * canvasHeight;
+                
+                // Draw the main depth line
+                this.interpretationCtx.strokeStyle = '#ff6b35';
+                this.interpretationCtx.lineWidth = 3;
+                this.interpretationCtx.beginPath();
+                this.interpretationCtx.moveTo(0, depthY);
+                this.interpretationCtx.lineTo(this.interpretationCanvas.width, depthY);
+                this.interpretationCtx.stroke();
+                
+                // Add depth markers on the line
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = 'bold 14px Arial';
+                
+                // Left marker
+                this.interpretationCtx.fillRect(0, depthY - 8, 20, 16);
+                this.interpretationCtx.fillStyle = '#ffffff';
+                this.interpretationCtx.fillText(`${this.depth}m`, 25, depthY + 5);
+                
+                // Right marker
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.fillRect(this.interpretationCanvas.width - 20, depthY - 8, 20, 16);
+                this.interpretationCtx.fillText(`${this.depth}m`, this.interpretationCanvas.width - 60, depthY + 5);
+                
+                // Add depth scale on the right side
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = '12px Arial';
+                this.interpretationCtx.textAlign = 'left';
+                
+                for (let i = 0; i <= maxDepth; i += 20) {
+                    const adjustedScaleDepth = i + depthOffset;
+                    const scaleY = (adjustedScaleDepth / maxDepth) * canvasHeight;
+                    this.interpretationCtx.fillStyle = '#ff6b35';
+                    this.interpretationCtx.fillRect(this.interpretationCanvas.width - 30, scaleY - 1, 10, 2);
+                    this.interpretationCtx.fillStyle = '#ffffff';
+                    this.interpretationCtx.fillText(`${i}m`, this.interpretationCanvas.width - 50, scaleY + 4);
+                }
+                
+                // Reset text alignment
+                this.interpretationCtx.textAlign = 'left';
+            }
+
+            drawCivilDepthLineOnInterpretation() {
+                // Draw a dynamic horizontal line for civil interpretation with +1m offset
+                const maxDepth = 100; // Maximum depth in meters
+                const canvasHeight = this.interpretationCanvas.height;
+                
+                // Offset to align depth 0 with the current 43m position, with +1m adjustment for civil
+                const depthOffset = 43; // meters
+                const adjustedDepth = this.depth + depthOffset + 1;
+                
+                // Calculate the Y position based on adjusted depth (inverted: 0m = top, 100m = bottom)
+                const depthY = (adjustedDepth / maxDepth) * canvasHeight;
+                
+                // Draw the main depth line
+                this.interpretationCtx.strokeStyle = '#ff6b35';
+                this.interpretationCtx.lineWidth = 3;
+                this.interpretationCtx.beginPath();
+                this.interpretationCtx.moveTo(0, depthY);
+                this.interpretationCtx.lineTo(this.interpretationCanvas.width, depthY);
+                this.interpretationCtx.stroke();
+                
+                // Add depth markers on the line
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = 'bold 14px Arial';
+                
+                // Left marker
+                this.interpretationCtx.fillRect(0, depthY - 8, 20, 16);
+                this.interpretationCtx.fillStyle = '#ffffff';
+                this.interpretationCtx.fillText(`${this.depth}m`, 25, depthY + 5);
+                
+                // Right marker
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.fillRect(this.interpretationCanvas.width - 20, depthY - 8, 20, 16);
+                this.interpretationCtx.fillText(`${this.depth}m`, this.interpretationCanvas.width - 60, depthY + 5);
+                
+                // Add depth scale on the right side
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = '12px Arial';
+                this.interpretationCtx.textAlign = 'left';
+                
+                for (let i = 0; i <= maxDepth; i += 20) {
+                    const adjustedScaleDepth = i + depthOffset;
+                    const scaleY = (adjustedScaleDepth / maxDepth) * canvasHeight;
+                    this.interpretationCtx.fillStyle = '#ff6b35';
+                    this.interpretationCtx.fillRect(this.interpretationCanvas.width - 30, scaleY - 1, 10, 2);
+                    this.interpretationCtx.fillStyle = '#ffffff';
+                    this.interpretationCtx.fillText(`${i}m`, this.interpretationCanvas.width - 50, scaleY + 4);
+                }
+                
+                // Reset text alignment
+                this.interpretationCtx.textAlign = 'left';
+            }
+
+            drawEnvironmentalDepthLineOnInterpretation() {
+                // Draw a dynamic horizontal line for environmental interpretation with -1m offset
+                const maxDepth = 100; // Maximum depth in meters
+                const canvasHeight = this.interpretationCanvas.height;
+                
+                // Offset to align depth 0 with the current 43m position, with -1m adjustment for environmental
+                const depthOffset = 43; // meters
+                const adjustedDepth = this.depth + depthOffset - 1;
+                
+                // Calculate the Y position based on adjusted depth (inverted: 0m = top, 100m = bottom)
+                const depthY = (adjustedDepth / maxDepth) * canvasHeight;
+                
+                // Draw the main depth line
+                this.interpretationCtx.strokeStyle = '#ff6b35';
+                this.interpretationCtx.lineWidth = 3;
+                this.interpretationCtx.beginPath();
+                this.interpretationCtx.moveTo(0, depthY);
+                this.interpretationCtx.lineTo(this.interpretationCanvas.width, depthY);
+                this.interpretationCtx.stroke();
+                
+                // Add depth markers on the line
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = 'bold 14px Arial';
+                
+                // Left marker
+                this.interpretationCtx.fillRect(0, depthY - 8, 20, 16);
+                this.interpretationCtx.fillStyle = '#ffffff';
+                this.interpretationCtx.fillText(`${this.depth}m`, 25, depthY + 5);
+                
+                // Right marker
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.fillRect(this.interpretationCanvas.width - 20, depthY - 8, 20, 16);
+                this.interpretationCtx.fillText(`${this.depth}m`, this.interpretationCanvas.width - 60, depthY + 5);
+                
+                // Add depth scale on the right side
+                this.interpretationCtx.fillStyle = '#ff6b35';
+                this.interpretationCtx.font = '12px Arial';
+                this.interpretationCtx.textAlign = 'left';
+                
+                for (let i = 0; i <= maxDepth; i += 20) {
+                    const adjustedScaleDepth = i + depthOffset;
+                    const scaleY = (adjustedScaleDepth / maxDepth) * canvasHeight;
+                    this.interpretationCtx.fillStyle = '#ff6b35';
+                    this.interpretationCtx.fillRect(this.interpretationCanvas.width - 30, scaleY - 1, 10, 2);
+                    this.interpretationCtx.fillStyle = '#ffffff';
+                    this.interpretationCtx.fillText(`${i}m`, this.interpretationCanvas.width - 50, scaleY + 4);
+                }
+                
+                // Reset text alignment
+                this.interpretationCtx.textAlign = 'left';
+            }
+
+             drawAnnotations() {
+                 // Add annotations for non-mining cases
+                 this.ctx.fillStyle = '#ffffff';
+                 this.ctx.font = '14px Arial';
+                 this.ctx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                 this.ctx.fillText('Escala: 1:1000', 20, 50);
+                 
+                 // Add case-specific text
+                 const caseText = {
+                     'water': 'Recursos Hídricos',
+                     'civil': 'Ingeniería Civil',
+                     'environmental': 'Estudios Ambientales'
+                 };
+                 
+                 if (caseText[this.currentCase]) {
+                     this.ctx.fillText(caseText[this.currentCase], 20, 70);
+                 }
+             }
+
+             drawInterpretationAnnotations() {
+                 // Add depth indicators and interpretation text
+                 this.interpretationCtx.fillStyle = '#ffd700';
+                 this.interpretationCtx.font = '14px Arial';
+                 this.interpretationCtx.fillText(`Profundidad: ${this.depth}m`, 20, 30);
+                 this.interpretationCtx.fillText('Escala: 1:1000', 20, 50);
+                 this.interpretationCtx.fillText('Interpretación', 20, 70);
+                 
+                 // Add case-specific interpretation text for non-mining cases
+                 if (this.currentCase !== 'mining') {
+                     const caseText = {
+                         'water': 'Análisis Hídrico',
+                         'civil': 'Análisis Geotécnico',
+                         'environmental': 'Análisis Ambiental'
+                     };
+                     
+                     if (caseText[this.currentCase]) {
+                         this.interpretationCtx.fillText(caseText[this.currentCase], 20, 90);
+                     }
+                 }
+             }
+
+             drawDepthLine() {
+                 // Draw a dynamic horizontal line that represents the current depth
+                 const maxDepth = 100; // Maximum depth in meters
+                                     const canvasHeight = this.canvas.height;
+                    
+                    // Offset to align depth 0 with the current 43m position
+                    const depthOffset = 43; // meters
+                    const adjustedDepth = this.depth + depthOffset;
+                 
+                 // Calculate the Y position based on adjusted depth (inverted: 0m = top, 100m = bottom)
+                 const depthY = (adjustedDepth / maxDepth) * canvasHeight;
+                 
+                 // Draw the main depth line
+                 this.ctx.strokeStyle = '#ff6b35'; // Orange color for visibility
+                 this.ctx.lineWidth = 4;
+                 this.ctx.setLineDash([]); // Solid line
+                 
+                 this.ctx.beginPath();
+                 this.ctx.moveTo(0, depthY);
+                 this.ctx.lineTo(this.canvas.width, depthY);
+                 this.ctx.stroke();
+                 
+                 // Add depth markers on the line
+                 this.ctx.fillStyle = '#ff6b35';
+                 this.ctx.font = 'bold 14px Arial';
+                 
+                 // Left marker
+                 this.ctx.fillRect(0, depthY - 8, 20, 16);
+                 this.ctx.fillStyle = '#ffffff';
+                 this.ctx.fillText(`${this.depth}m`, 25, depthY + 5);
+                 
+                 // Right marker
+                 this.ctx.fillStyle = '#ff6b35';
+                 this.ctx.fillRect(this.canvas.width - 20, depthY - 8, 20, 16);
+                 this.ctx.fillText(`${this.depth}m`, this.canvas.width - 60, depthY + 5);
+                 
+                 // Add depth scale on the right side
+                 this.ctx.fillStyle = '#ff6b35';
+                 this.ctx.font = '12px Arial';
+                 this.ctx.textAlign = 'left';
+                 
+                 for (let i = 0; i <= maxDepth; i += 20) {
+                     const adjustedScaleDepth = i + depthOffset;
+                     const scaleY = (adjustedScaleDepth / maxDepth) * canvasHeight;
+                     this.ctx.fillStyle = '#ff6b35';
+                     this.ctx.fillRect(this.canvas.width - 30, scaleY - 1, 10, 2);
+                     this.ctx.fillStyle = '#ffffff';
+                     this.ctx.fillText(`${i}m`, this.canvas.width - 50, scaleY + 4);
+                 }
+                 
+                 // Reset text alignment
+                 this.ctx.textAlign = 'left';
+             }
+
+            drawDepthLineOnInterpretation() {
+                // Draw a dynamic horizontal line that represents the current depth on interpretation canvas
+                const maxDepth = 100; // Maximum depth in meters
+                                    const canvasHeight = this.interpretationCanvas.height;
+                    
+                    // Offset to align depth 0 with the current 45m position (original for mining)
+                    const depthOffset = 45; // meters
+                    const adjustedDepth = this.depth + depthOffset;
+                 
+                 // Calculate the Y position based on adjusted depth (inverted: 0m = top, 100m = bottom)
+                 const depthY = (adjustedDepth / maxDepth) * canvasHeight;
+                 
+                 // Draw the main depth line
+                 this.interpretationCtx.strokeStyle = '#ff6b35'; // Orange color for visibility
+                 this.interpretationCtx.lineWidth = 4;
+                 this.interpretationCtx.setLineDash([]); // Solid line
+                 
+                 this.interpretationCtx.beginPath();
+                 this.interpretationCtx.moveTo(0, depthY);
+                 this.interpretationCtx.lineTo(this.interpretationCanvas.width, depthY);
+                 this.interpretationCtx.stroke();
+                 
+                 // Add depth markers on the line
+                 this.interpretationCtx.fillStyle = '#ff6b35';
+                 this.interpretationCtx.font = 'bold 14px Arial';
+                 
+                 // Left marker
+                 this.interpretationCtx.fillRect(0, depthY - 8, 20, 16);
+                 this.interpretationCtx.fillStyle = '#ffffff';
+                 this.interpretationCtx.fillText(`${this.depth}m`, 25, depthY + 5);
+                 
+                 // Right marker
+                 this.interpretationCtx.fillStyle = '#ff6b35';
+                 this.interpretationCtx.fillRect(this.interpretationCanvas.width - 20, depthY - 8, 20, 16);
+                 this.interpretationCtx.fillText(`${this.depth}m`, this.interpretationCanvas.width - 60, depthY + 5);
+                 
+                 // Add depth scale on the right side
+                 this.interpretationCtx.fillStyle = '#ff6b35';
+                 this.interpretationCtx.font = '12px Arial';
+                 this.interpretationCtx.textAlign = 'left';
+                 
+                 for (let i = 0; i <= maxDepth; i += 20) {
+                     const adjustedScaleDepth = i + depthOffset;
+                     const scaleY = (adjustedScaleDepth / maxDepth) * canvasHeight;
+                     this.interpretationCtx.fillStyle = '#ff6b35';
+                     this.interpretationCtx.fillRect(this.interpretationCanvas.width - 30, scaleY - 1, 10, 2);
+                     this.interpretationCtx.fillStyle = '#ffffff';
+                     this.interpretationCtx.fillText(`${i}m`, this.interpretationCanvas.width - 50, scaleY + 4);
+                 }
+                 
+                 // Reset text alignment
+                 this.interpretationCtx.textAlign = 'left';
+             }
+
+             getResistivityColor(value) {
+                 // Color scale: blue (low) -> green -> yellow -> orange -> red (high)
+                 if (value < 50) return '#1e40af'; // Blue
+                 if (value < 100) return '#3b82f6'; // Light blue
+                 if (value < 200) return '#10b981'; // Green
+                 if (value < 500) return '#f59e0b'; // Yellow/Orange
+                 return '#ef4444'; // Red
+             }
+
+
+
+
+
+            exportResults() {
+                // Create a temporary link to download the main canvas as an image
+                const link = document.createElement('a');
+                link.download = `tomografia_${this.currentCase}_${this.depth}m.png`;
+                link.href = this.canvas.toDataURL();
+                link.click();
+                
+                // Also export the interpretation canvas if it's the mining, water, civil, or environmental case
+                if (this.currentCase === 'mining' || this.currentCase === 'water' || this.currentCase === 'civil' || this.currentCase === 'environmental') {
+                    setTimeout(() => {
+                        const link2 = document.createElement('a');
+                        link2.download = `interpretacion_${this.currentCase}_${this.depth}m.png`;
+                        link2.href = this.interpretationCanvas.toDataURL();
+                        link2.click();
+                    }, 100);
+                }
+            }
+         }
+
+         // Initialize the simulator when the page loads
+         let initAttempts = 0;
+         const maxInitAttempts = 50; // 5 seconds maximum
+         
+         function initializeSimulator() {
+             console.log(`Attempting to initialize TomographySimulator (attempt ${initAttempts + 1}/${maxInitAttempts})...`);
+             
+             if (initAttempts >= maxInitAttempts) {
+                 console.error('Failed to initialize TomographySimulator after maximum attempts');
+                 return;
+             }
+             
+             initAttempts++;
+             
+             // Check if all required elements exist
+             const canvas = document.getElementById('tomography-canvas');
+             const interpretationCanvas = document.getElementById('interpretation-canvas');
+             const simulationButtons = document.querySelectorAll('.simulation-btn');
+             
+             if (!canvas || !interpretationCanvas) {
+                 console.log('Canvas elements not found, retrying in 100ms...');
+                 setTimeout(initializeSimulator, 100);
+                 return;
+             }
+             
+             if (simulationButtons.length === 0) {
+                 console.log('Simulation buttons not found, retrying in 100ms...');
+                 setTimeout(initializeSimulator, 100);
+                 return;
+             }
+             
+             console.log('All required elements found, creating TomographySimulator...');
+             window.tomographySimulator = new TomographySimulator();
+             
+             // Initialize Mobile Menu
+             initializeMobileMenu();
+             
+             // Initialize Back to Top Button
+             const backToTopBtn = document.getElementById('back-to-top');
+             if (backToTopBtn) {
+                 window.addEventListener('scroll', () => {
+                     if (window.pageYOffset > 300) {
+                         backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                         backToTopBtn.classList.add('opacity-100');
+                     } else {
+                         backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                         backToTopBtn.classList.remove('opacity-100');
+                     }
+                 });
+                 
+                 backToTopBtn.addEventListener('click', () => {
+                     window.scrollTo({
+                         top: 0,
+                         behavior: 'smooth'
+                     });
+                 });
+                 console.log('Back to top button initialized successfully');
+             } else {
+                 console.warn('Back to top button not found');
+             }
+         }
+
+         // Try to initialize when DOM is ready
+         document.addEventListener('DOMContentLoaded', () => {
+             console.log('DOM Content Loaded - starting initialization...');
+             setTimeout(initializeSimulator, 100);
+         });
+
+         // Also try when window loads
+         window.addEventListener('load', () => {
+             console.log('Window loaded - checking if simulator exists...');
+             if (!window.tomographySimulator) {
+                 setTimeout(initializeSimulator, 100);
+             }
+         });
+
+         // Funciones para el modal de imágenes
+         function openImageModal(imageType) {
+             const modal = document.getElementById('imageModal');
+             const modalContent = document.getElementById('modalContent');
+             
+             let content = '';
+             
+             switch(imageType) {
+                 case 'equipo-campo':
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Equipo ESGA SAS en Campo</h3>
+                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Descripción:</strong> Nuestro equipo de técnicos especializados trabajando con equipos de tomografía eléctrica en condiciones de campo reales.
+                                 </p>
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Equipos:</strong> Sistema de tomografía eléctrica, baterías especializadas, cables de conexión.
+                                 </p>
+                                 <p class="text-esga-gray">
+                                     <strong>Ubicación:</strong> carrera 20 #24-174 sogamoso boyaca, edificio bello
+                                 </p>
+                             </div>
+                             <div class="text-center">
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                             <img src="images/4.jpeg" alt="Equipo ESGA SAS en Campo" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-lg font-semibold text-esga-blue">Equipo ESGA SAS en Campo</p>
+                                     <p class="text-sm text-esga-gray mt-2">Técnicos profesionales con equipos especializados</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+                     break;
+                 case 'equipos-geofisicos':
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Equipos Geofísicos ESGA SAS</h3>
+                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Descripción:</strong> Equipos especializados incluyendo baterías, cables, electrodos y unidades de medición.
+                                 </p>
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Tecnología:</strong> Instrumentos de alta precisión para tomografías eléctricas.
+                                 </p>
+                                 <p class="text-esga-gray">
+                                     <strong>Especialidad:</strong> Estudios geofísicos avanzados
+                                 </p>
+                             </div>
+                             <div class="text-center">
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                             <img src="images/equipos.jpg" alt="Equipos Geofísicos ESGA SAS" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-lg font-semibold text-esga-blue">Equipos Geofísicos ESGA SAS</p>
+                                     <p class="text-sm text-esga-gray mt-2">Instrumentos de alta precisión para tomografías eléctricas</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+                     break;
+                 case 'pantalla-datos':
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Pantalla de Datos en Tiempo Real</h3>
+                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Descripción:</strong> Pantalla del equipo ESGA SAS mostrando datos de tomografía eléctrica en tiempo real.
+                                 </p>
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Visualización:</strong> Interpretación de resistividad del subsuelo con análisis avanzado.
+                                 </p>
+                                 <p class="text-esga-gray">
+                                     <strong>Monitoreo:</strong> Datos continuos y precisos
+                                 </p>
+                             </div>
+                             <div class="text-center">
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                             <img src="images/1.jpeg" alt="Datos en Tiempo Real ESGA SAS" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-lg font-semibold text-esga-blue">Datos en Tiempo Real</p>
+                                     <p class="text-sm text-esga-gray mt-2">Visualización de resistividad del subsuelo</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+                     break;
+                 case 'trabajo-campo':
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Trabajo en Campo</h3>
+                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Descripción:</strong> Técnico realizando mediciones en campo con vegetación densa.
+                                 </p>
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Condiciones:</strong> Trabajo en condiciones desafiantes y terrenos complejos.
+                                 </p>
+                                 <p class="text-esga-gray">
+                                     <strong>Cobertura:</strong> Capacidad de trabajo en todo el territorio nacional
+                                 </p>
+                             </div>
+                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                              <img src="images/6.jpeg" alt="Trabajo en Campo ESGA SAS - Imagen 1" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-sm font-semibold text-esga-blue">Trabajo en Campo</p>
+                                     <p class="text-xs text-esga-gray mt-1">Mediciones profesionales</p>
+                                 </div>
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                              <img src="images/7 .jpeg" alt="Trabajo en Campo ESGA SAS - Imagen 2" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-sm font-semibold text-esga-blue">Trabajo en Campo</p>
+                                     <p class="text-xs text-esga-gray mt-1">Condiciones de campo</p>
+                                 </div>
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                              <img src="images/8.jpeg" alt="Trabajo en Campo ESGA SAS - Imagen 3" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-sm font-semibold text-esga-blue">Trabajo en Campo</p>
+                                     <p class="text-xs text-esga-gray mt-1">Equipos en acción</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+                     break;
+                 case 'software-analisis':
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Software de Análisis ESGA SAS</h3>
+                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Descripción:</strong> Software CAD y herramientas de análisis para interpretación de datos geofísicos.
+                                 </p>
+                                 <p class="text-esga-gray mb-2">
+                                     <strong>Herramientas:</strong> Análisis 3D, GIS y generación de reportes profesionales.
+                                 </p>
+                                 <p class="text-esga-gray">
+                                     <strong>Reportes:</strong> Documentación técnica detallada y profesional
+                                 </p>
+                             </div>
+                             <div class="text-center">
+                                 <div class="bg-white rounded-lg p-4 shadow-lg">
+                                                                             <img src="images/3d.jpg" alt="Análisis de Datos ESGA SAS" class="w-full h-80 object-cover rounded-lg mb-4" loading="lazy">
+                                     <p class="text-lg font-semibold text-esga-blue">Análisis de Datos</p>
+                                     <p class="text-sm text-esga-gray mt-2">Software especializado para interpretación geofísica</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+                     break;
+                 default:
+                     content = `
+                         <div class="p-6">
+                             <h3 class="text-2xl font-bold text-esga-blue mb-4">Imagen ESGA SAS</h3>
+                             <div class="text-center">
+                                 <div class="bg-gradient-to-br from-esga-blue to-esga-light-blue rounded-lg p-8 text-white">
+                                     <svg class="w-24 h-24 mx-auto mb-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                     </svg>
+                                     <p class="text-lg font-semibold">Trabajo Profesional</p>
+                                     <p class="text-sm text-blue-200 mt-2">ESGA SAS - Expertos en Geofísica</p>
+                                 </div>
+                             </div>
+                         </div>
+                     `;
+             }
+             
+             modalContent.innerHTML = content;
+             modal.classList.remove('hidden');
+         }
+
+         function closeImageModal() {
+             const modal = document.getElementById('imageModal');
+             modal.classList.add('hidden');
+         }
+
+         // Cerrar modal con Escape
+         document.addEventListener('keydown', (e) => {
+             if (e.key === 'Escape') {
+                 closeImageModal();
+             }
+         });
+
+         // Cerrar modal al hacer clic fuera
+         document.getElementById('imageModal').addEventListener('click', (e) => {
+             if (e.target.id === 'imageModal') {
+                 closeImageModal();
+             }
+         });
+
+         // Form submission
+         // Form submission
+         document.getElementById('contact-form').addEventListener('submit', function(e) {
+             e.preventDefault();
+             alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+         });
+
+         // Intersection Observer for animations
+
+
+         // Hero Background Image Carousel
+         function initHeroImageCarousel() {
+             const heroSection = document.querySelector('.hero-bg');
+             if (!heroSection) return;
+
+             let currentImageIndex = 0;
+             const imageClasses = ['', 'image-2', 'image-3'];
+             const imageNames = ['Imagen 4', 'Imagen 3D', 'Imagen 6'];
+             
+             function updateIndicators() {
+                 // Update all indicators
+                 for (let i = 1; i <= 3; i++) {
+                     const indicator = document.getElementById(`indicator-${i}`);
+                     if (indicator) {
+                         if (i === currentImageIndex + 1) {
+                             indicator.style.opacity = '1';
+                         } else {
+                             indicator.style.opacity = '0.5';
+                         }
+                     }
+                 }
+             }
+             
+             function changeBackgroundImage() {
+                 // Remove current image class
+                 heroSection.classList.remove(imageClasses[currentImageIndex]);
+                 
+                 // Move to next image
+                 currentImageIndex = (currentImageIndex + 1) % imageClasses.length;
+                 
+                 // Add new image class
+                 if (imageClasses[currentImageIndex]) {
+                     heroSection.classList.add(imageClasses[currentImageIndex]);
+                 }
+                 
+                 // Update indicators
+                 updateIndicators();
+                 
+                 // Update console log for debugging
+                 console.log(`Cambiando a: ${imageNames[currentImageIndex]}`);
+             }
+
+             // Change image every 5 seconds
+             setInterval(changeBackgroundImage, 5000);
+             
+             // Initial call to start the carousel
+             setTimeout(changeBackgroundImage, 1000);
+             
+             // Initialize indicators
+             updateIndicators();
+         }
+
+
+
+         // Initialize hero image carousel when page loads
+         document.addEventListener('DOMContentLoaded', function() {
+             initHeroImageCarousel();
+         });
+     </script>
+
+
+
+
+
+    <!-- WhatsApp Contact Button -->
+    <a href="https://wa.me/573124591696?text=Hola%20ESGA%20SAS,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20tomografía%20eléctrica" 
+       target="_blank" 
+       class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 z-50 group animate-pulse">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+        <div class="absolute right-16 top-1/2 transform -translate-y-1/2 bg-white text-green-600 px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <span class="font-semibold">¡Contáctanos por WhatsApp!</span>
+        </div>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 left-8 bg-esga-blue text-white p-3 rounded-full shadow-lg hover:bg-esga-light-blue transition-all duration-300 opacity-0 pointer-events-none z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- EmailJS Configuration and Form Handler -->
+    <script>
+        // Inicializar EmailJS
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Reemplazar con tu Public Key de EmailJS
+        })();
+
+        // Manejar el envío del formulario
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoading = document.getElementById('btn-loading');
+            const formMessage = document.getElementById('form-message');
+            
+            // Mostrar estado de carga
+            submitBtn.disabled = true;
+            btnText.classList.add('hidden');
+            btnLoading.classList.remove('hidden');
+            
+            // Obtener datos del formulario
+            const formData = {
+                user_name: document.getElementById('user_name').value,
+                user_email: document.getElementById('user_email').value,
+                user_phone: document.getElementById('user_phone').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value,
+                to_email: 'empresaesga@hotmail.com'
+            };
+            
+            // Enviar email usando EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+                .then(function(response) {
+                    // Éxito
+                    formMessage.classList.remove('hidden');
+                    formMessage.classList.remove('bg-red-100', 'text-red-700', 'border-red-300');
+                    formMessage.classList.add('bg-green-100', 'text-green-700', 'border-green-300', 'border');
+                    formMessage.textContent = '¡Mensaje enviado correctamente! Te contactaremos pronto.';
+                    
+                    // Limpiar formulario
+                    document.getElementById('contact-form').reset();
+                    
+                    // Scroll al mensaje
+                    formMessage.scrollIntoView({ behavior: 'smooth' });
+                })
+                .catch(function(error) {
+                    // Error
+                    formMessage.classList.remove('hidden');
+                    formMessage.classList.remove('bg-green-100', 'text-green-700', 'border-green-300');
+                    formMessage.classList.add('bg-red-100', 'text-red-700', 'border-red-300', 'border');
+                    formMessage.textContent = 'Error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctanos por WhatsApp.';
+                    
+                    console.error('Error:', error);
+                })
+                .finally(function() {
+                    // Restaurar botón
+                    submitBtn.disabled = false;
+                    btnText.classList.remove('hidden');
+                    btnLoading.classList.add('hidden');
+                });
+        });
+    </script>
+
+</body>
+</html> 

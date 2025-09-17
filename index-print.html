@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESGA SAS - Expertos en Estudios Geofísicos y Ambientales | Tomografías Eléctricas Colombia</title>
+    <meta name="description" content="ESGA SAS - Líderes en estudios geofísicos, tomografías eléctricas y servicios ambientales en Colombia. Más de 10 años de experiencia en exploración minera, recursos hídricos e ingeniería civil.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+        
+        /* Print-specific styles */
+        @media print {
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .no-break {
+                page-break-inside: avoid;
+            }
+            
+            .header, .footer {
+                position: fixed;
+                width: 100%;
+            }
+            
+            .header {
+                top: 0;
+                height: 60px;
+                background: #1e3a8a;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14pt;
+                font-weight: bold;
+            }
+            
+            .footer {
+                bottom: 0;
+                height: 40px;
+                background: #f8f9fa;
+                color: #666;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10pt;
+                border-top: 1px solid #ddd;
+            }
+            
+            .content {
+                margin-top: 80px;
+                margin-bottom: 60px;
+            }
+        }
+        
+        /* Colors */
+        :root {
+            --esga-blue: #1e3a8a;
+            --esga-light-blue: #3b82f6;
+            --esga-gray: #64748b;
+            --esga-orange: #f97316;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--esga-blue);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            max-height: 80px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 14pt;
+            opacity: 0.9;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 20px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 20pt;
+            font-weight: bold;
+            color: var(--esga-blue);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--esga-orange);
+            padding-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 16pt;
+            color: var(--esga-gray);
+            margin-bottom: 15px;
+        }
+        
+        /* Services grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .service-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .service-card h3 {
+            color: var(--esga-blue);
+            font-size: 16pt;
+            margin-bottom: 10px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .service-card li:before {
+            content: "• ";
+            color: var(--esga-orange);
+            font-weight: bold;
+        }
+        
+        /* Contact information */
+        .contact-info {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid var(--esga-orange);
+        }
+        
+        .contact-info h3 {
+            color: var(--esga-blue);
+            font-size: 18pt;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item strong {
+            color: var(--esga-blue);
+            min-width: 120px;
+        }
+        
+        /* Images section */
+        .images-section {
+            margin: 30px 0;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .image-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
+        
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .image-item p {
+            margin-top: 10px;
+            font-size: 10pt;
+            color: var(--esga-gray);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--esga-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .service-card {
+                break-inside: avoid;
+            }
+            
+            .contact-info {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="images/LOGO ESGA1.png" alt="ESGA SAS Logo" class="logo">
+        <h1>ESGA SAS</h1>
+        <p>Expertos en Estudios Geofísicos y Ambientales</p>
+        <p>Estudios de Suelos, Geología y Ambiental</p>
+    </div>
+    
+    <!-- Content -->
+    <div class="content">
+        <!-- Hero Section -->
+        <div class="section">
+            <h2 class="section-title">Sobre ESGA SAS</h2>
+            <p style="font-size: 14pt; line-height: 1.6; margin-bottom: 20px;">
+                Especialistas en tomografías eléctricas, estudios de suelos y servicios ambientales. 
+                Más de 10 años de experiencia en Colombia y Latinoamérica, utilizando tecnología de punta 
+                para el análisis integral del subsuelo.
+            </p>
+            <p style="font-size: 12pt; color: var(--esga-gray);">
+                <strong>Misión:</strong> Proporcionar servicios geofísicos y ambientales de alta calidad, 
+                contribuyendo al desarrollo sostenible y la seguridad de proyectos de ingeniería.
+            </p>
+        </div>
+        
+        <!-- Services Section -->
+        <div class="section page-break">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Tecnología geofísica de vanguardia para el análisis integral del subsuelo</p>
+            
+            <div class="services-grid">
+                <div class="service-card no-break">
+                    <h3>Tomografías Eléctricas (ERT)</h3>
+                    <p>Mapeo detallado del subsuelo mediante resistividad eléctrica. Detección de acuíferos, cavidades y estructuras geológicas.</p>
+                    <ul>
+                        <li>Exploración minera y recursos hídricos</li>
+                        <li>Estudios de ingeniería civil</li>
+                        <li>Investigación arqueológica</li>
+                        <li>Estudios ambientales</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Sísmica de Refracción</h3>
+                    <p>Análisis de ondas sísmicas para determinar la velocidad de propagación y estructura del subsuelo.</p>
+                    <ul>
+                        <li>Caracterización de suelos</li>
+                        <li>Estudios de estabilidad</li>
+                        <li>Investigación de fallas geológicas</li>
+                        <li>Evaluación de cimentaciones</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Estudios Geoeléctricos</h3>
+                    <p>Análisis de la resistividad del suelo para caracterización geológica y estudios ambientales.</p>
+                    <ul>
+                        <li>Caracterización de suelos</li>
+                        <li>Estudios de contaminación</li>
+                        <li>Evaluación de acuíferos</li>
+                        <li>Investigación geotécnica</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Exploración Minera</h3>
+                    <p>Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad eléctrica.</p>
+                    <ul>
+                        <li>Detección de mineralización</li>
+                        <li>Mapeo de estructuras geológicas</li>
+                        <li>Evaluación de recursos minerales</li>
+                        <li>Estudios de prospección</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Estudios de Suelos</h3>
+                    <p>Caracterización geotécnica integral del suelo para proyectos de construcción e ingeniería civil.</p>
+                    <ul>
+                        <li>Análisis de capacidad portante</li>
+                        <li>Clasificación geotécnica de suelos</li>
+                        <li>Evaluación de estabilidad de taludes</li>
+                        <li>Diseño de cimentaciones</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Gestión del Riesgo</h3>
+                    <p>Evaluación integral de riesgos geológicos y ambientales para el desarrollo urbano sostenible.</p>
+                    <ul>
+                        <li>Análisis de amenazas naturales</li>
+                        <li>Evaluación de vulnerabilidad urbana</li>
+                        <li>Planificación territorial segura</li>
+                        <li>Mitigación de riesgos geológicos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Applications Section -->
+        <div class="section page-break">
+            <h2 class="section-title">Aplicaciones Principales</h2>
+            
+            <div class="services-grid">
+                <div class="service-card no-break">
+                    <h3>Exploración Minera</h3>
+                    <p>Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad. 
+                    Identificación de zonas de mineralización y evaluación de recursos minerales.</p>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Recursos Hídricos</h3>
+                    <p>Localización de acuíferos y análisis del flujo de agua subterránea. 
+                    Evaluación de la calidad del agua y determinación de parámetros hidráulicos.</p>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Ingeniería Civil</h3>
+                    <p>Detección de cavidades, fracturas y evaluación de estabilidad del terreno. 
+                    Caracterización geotécnica para diseño de cimentaciones.</p>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Exploración Minera</h3>
+                    <p>Detección de vetas minerales y estructuras geológicas mediante análisis de resistividad. 
+                    Identificación de zonas de mineralización y evaluación de recursos minerales.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment and Technology -->
+        <div class="section page-break">
+            <h2 class="section-title">Equipos y Tecnología</h2>
+            <p class="section-subtitle">Utilizamos equipos de alta precisión y tecnología de vanguardia</p>
+            
+            <div class="services-grid">
+                <div class="service-card no-break">
+                    <h3>Equipos Geomative</h3>
+                    <p>Instrumentos especializados para estudios geofísicos de alta precisión y confiabilidad, 
+                    certificados bajo estándares internacionales de calidad.</p>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Software de Análisis</h3>
+                    <p>Software CAD y herramientas de análisis para interpretación de datos geofísicos 
+                    y generación de reportes profesionales detallados.</p>
+                </div>
+                
+                <div class="service-card no-break">
+                    <h3>Equipos de Campo</h3>
+                    <p>Equipos especializados incluyendo baterías, cables, electrodos y unidades de medición 
+                    para tomografías eléctricas y estudios geofísicos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="section page-break">
+            <h2 class="section-title">Información de Contacto</h2>
+            
+            <div class="contact-info no-break">
+                <h3>Datos de la Empresa</h3>
+                
+                <div class="contact-item">
+                    <strong>Empresa:</strong> ESGA SAS - Estudios de Suelos, Geología y Ambiental
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Dirección:</strong> carrera 20 #24-174 sogamoso boyaca, edificio bello
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Cobertura:</strong> Nacional e internacional
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Teléfono 1:</strong> +57 3124591696 (WhatsApp disponible)
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Teléfono 2:</strong> +57 3168674412
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Email:</strong> empresaesga@hotmail.com
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Horarios:</strong> Lunes a Viernes: 8:00 AM - 6:00 PM | Sábados: 9:00 AM - 1:00 PM
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #e8f5e8; border-radius: 8px;">
+                <h3 style="color: var(--esga-blue); margin-bottom: 10px;">Redes Sociales</h3>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100064087063265&locale=es_LA" target="_blank">ESGA SAS</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/esga_sas/" target="_blank">@esga_sas</a></p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>ESGA SAS</strong> - Especialistas en Estudios Geofísicos y Ambientales</p>
+            <p>📞 +57 3124591696 | 📧 empresaesga@hotmail.com</p>
+            <p>📍 carrera 20 #24-174 sogamoso boyaca, edificio bello</p>
+            <p style="margin-top: 10px; font-size: 10pt;">© 2024 ESGA SAS - Todos los derechos reservados</p>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-scroll to top when printing
+        window.addEventListener('beforeprint', function() {
+            window.scrollTo(0, 0);
+        });
+        
+        // Add print button functionality
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
+
